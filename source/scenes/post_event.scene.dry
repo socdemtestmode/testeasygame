@@ -1,0 +1,4 @@
+title: Post Event
+new-page: true
+go-to: election_algorithm
+set-jump: post_postevent

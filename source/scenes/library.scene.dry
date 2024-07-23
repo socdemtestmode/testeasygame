@@ -1,0 +1,236 @@
+title: library
+new-page: true
+is-special: true
+go-to: menu
+
+= The Library
+
+Herein contains relevant information about the government and politics of the German republic.
+
+@menu
+
+- @government: Government
+- @demographics: Demographics
+- @parties: Parties
+- @public_opinion: Public opinion (and projected election results)
+- @paramilitaries: Paramilitary groups
+- @factions: Internal Factions
+- @backSpecialScene: Exit library.
+
+@government
+go-to: menu
+
+The German Republic, called by some of our detractors as the "Weimar Republic", is a parliamentary republic with a somewhat weak president and a strong parliament, called the Reichstag. The Reichstag is responsible for governing, while the President has a largely ceremonial role but also has some important governing responsibilities.
+
+The Reichstag is elected based on a proportional representation system, giving parties seats roughly proportional to their vote share in each electoral district. The Reichstag then elects the Chancellor and the cabinet by a majority vote, who are responsible for government. A majority vote-of-no-confidence can remove the current government.
+
+The President is elected by a national direct vote, in two rounds. The second round is used if the first round does not result in a majority for one candidate; the candidate who receives a plurality in the second round becomes president (there is no obligation for weaker candidates to drop out). The role of the president is mostly to represent Germany, but he also has some crucial governing powers. The president and chancellor can together use emergency decrees to govern, bypassing the Reichstag. The president can also appoint or remove a chancellor when a parliamentary majority is unable to be established, and can thus influence the formation of a government.
+
+Germany is divided into a number of states, each of which have their own governments with some responsibilities. By far the largest and most important state is Prussia.
+
+@demographics
+go-to: menu
+
+**Demographic Groups**
+
+**Working Class**: The urban working class - blue-collar workers in factories, workshops, mines, and the like. Most are socialist, supporting either the SPD or KPD. They make up 40-50% of the population.
+
+**Old Mittelstand**: The old middle class consists of independent artisans, shopkeepers, and small-time businesspeople. They tend to be conservative and are the strongest base for the far right. 10-15% of the population.
+
+**New Mittelstand**: The new middle class consists of white-collar workers and government employees. This is the base of liberalism. 10-15% of the population.
+
+**Rural**: Small and large farmers and independent rural workers. Protestant farmers often support the DNVP. 20-30% of the population.
+
+**Catholics** are the largest religious minority, at about 30% of the population. They disproportionately support the Center Party (or the Bavarian People's Party in Bavaria).
+
+**Jews** account for between 0.5% to 1% of the population, and tend to support liberal parties, mostly the DDP, although substantial numbers support the SPD or KPD.
+
+
+@public_opinion
+on-arrival: {!
+Q.pro_republic = Math.round(Q.pro_republic);
+Q.nationalism = Math.round(Q.nationalism);
+Q.socialism = Math.round(Q.socialism);
+!}
+go-to: election_algorithm
+set-jump: election_projections
+
+**Public Opinion**
+
+#Support for Socialism: [+ socialism +]%
+
+#Support for Nationalism: [+ nationalism +]%
+
+Support for the Republic: [+ pro_republic +]%
+
+
+@election_projections
+go-to: menu
+
+**Projected election results** (if the election were to be held now):
+
+# 1928: 30, 1930: 25, 1932: 22
+SPD: [+ spd_votes +]%
+
+# 1928: 15, 1930: 15, 1932: 
+Z + BVP: [+ z_votes +]%
+
+# 1928: 10, 1930: 13
+KPD: [+ kpd_votes +]%
+
+# 1928: 5, 1930: 4 (as DstP)
+DDP: [+ ddp_votes +]%
+
+# 1928: 9, 1930: 5
+DVP: [+ dvp_votes +]%
+
+# 1928: 14, 1930: 7
+DNVP: [+ dnvp_votes +]%
+
+# 1928: 3, 1930: 18
+NSDAP: [+ nsdap_votes +]%
+
+# 1928: 9, 1930: 10
+Others: [+ other_votes +]%
+
+**Detailed results for each demographic**
+
+Workers: SPD: [+ workers_spd_normalized +]%, Z: [+ workers_z_normalized +]%, KPD: [+ workers_kpd_normalized +]%, DDP: [+ workers_ddp_normalized +]%, DVP: [+ workers_dvp_normalized +]%; DNVP: [+ workers_dnvp_normalized +]%, NSDAP: [+ workers_nsdap_normalized +]%, Others: [+ workers_other_normalized +]%
+
+New Middle Class: SPD: [+ new_middle_spd_normalized +]%, Z: [+ new_middle_z_normalized +]%, KPD: [+ new_middle_kpd_normalized +]%, DDP: [+ new_middle_ddp_normalized +]%, DVP: [+ new_middle_dvp_normalized +]%; DNVP: [+ new_middle_dnvp_normalized +]%, NSDAP: [+ new_middle_nsdap_normalized +]%, Others: [+ new_middle_other_normalized +]%
+
+Old Middle Class: SPD: [+ old_middle_spd_normalized +]%, Z: [+ old_middle_z_normalized +]%, KPD: [+ old_middle_kpd_normalized +]%, DDP: [+ old_middle_ddp_normalized +]%, DVP: [+ old_middle_dvp_normalized +]%; DNVP: [+ old_middle_dnvp_normalized +]%, NSDAP: [+ old_middle_nsdap_normalized +]%, Others: [+ old_middle_other_normalized +]%
+
+Rural: SPD: [+ rural_spd_normalized +]%, Z: [+ rural_z_normalized +]%, KPD: [+ rural_kpd_normalized +]%, DDP: [+ rural_ddp_normalized +]%, DVP: [+ rural_dvp_normalized +]%; DNVP: [+ rural_dnvp_normalized +]%, NSDAP: [+ rural_nsdap_normalized +]%, Others: [+ rural_other_normalized +]%
+
+Unemployed: SPD: [+ unemployed_spd_normalized +]%, Z: [+ unemployed_z_normalized +]%, KPD: [+ unemployed_kpd_normalized +]%, DDP: [+ unemployed_ddp_normalized +]%, DVP: [+ unemployed_dvp_normalized +]%; DNVP: [+ unemployed_dnvp_normalized +]%, NSDAP: [+ unemployed_nsdap_normalized +]%, Others: [+ unemployed_other_normalized +]%
+
+Catholics: SPD: [+ catholics_spd_normalized +]%, Z: [+ catholics_z_normalized +]%, KPD: [+ catholics_kpd_normalized +]%, DDP: [+ catholics_ddp_normalized +]%, DVP: [+ catholics_dvp_normalized +]%; DNVP: [+ catholics_dnvp_normalized +]%, NSDAP: [+ catholics_nsdap_normalized +]%, Others: [+ catholics_other_normalized +]%
+
+@parties
+go-to: menu
+
+**SPD** - *Sozialdemokratische Partei Deutschlands* (Social Democratic Party of Germany) - this is us. We are a socialist and democratic party of the working class. We are the heirs of the legacy of Marx and Engels, Lassalle and Bebel. We are the foremost defenders of the Republic. The modern SPD was formed from a merger of the "Majority" SPD, which supported the Great War, and the "Independent" SPD or USPD, which opposed the war.
+
+**Z** - *Zentrumspartei* (Center Party) - a centrist to center-right Catholic party that supports the Republic, and has historically supported many of our labor, welfare, and anti-militarist priorities. They have often been in coalitions with us. They are often associated with the **BVP** (Bavarian People's Party), which represents Catholics in Bavaria. [? if year >= 1930 or chancellor = "Brüning" : They have appeared to take a more conservative turn recently, with the rise of Brüning and the party leader, Ludwig Kaas. ?]
+
+Current relations: [+ z_relation : relationships +]
+
+# TODO: replace this with the german state party after 1930
+**DDP** - *Deutsche Demokratische Partei* (German Democratic Party) - a center-left liberal party, popular among the intelligensia and educated middle class. They have often been in coalitions with us. [? if year >= 1930 : They have recently renamed themselves the German State Party. ?]
+
+Current relations: [+ ddp_relation : relationships +]
+
+**DVP** - *Deutsche Volkspartei* (German People's Party) - a conservative-liberal party, supported by the middle classes and bourgeoisie. We have occasionally been in coalitions.
+
+Current relations: [+ dvp_relation : relationships +]
+
+**DNVP** - *Deutschnationale Volkspartei* (German National People's Party) - a right-wing nationalist-conservative party, with authoritarian, monarchist, and racist elements. It is supported by the former aristocracy, rural landowners, and conservative Lutherans.
+
+Current relations: [+ dnvp_relation : relationships +]
+
+**KPD** - *Kommunistische Partei Deutschlands* (German Communist Party) - an offshoot of the SPD that emerged in the aftermath of the Revolution, they follow the path of Moscow.
+
+Current relations: [+ kpd_relation : relationships +]
+
+**NSDAP** - *Nationalsozialistische Deutsche Arbeiterpartei* - (National Socialist German Worker's Party, or Nazis) - a far-right nationalist and antisemitic party.
+
+Current relations: [+ nsdap_relation : relationships +]
+
+@paramilitaries
+on-arrival: {!
+Q.rb_strength = Math.round(Q.rb_strength);
+Q.sh_strength = Math.round(Q.sh_strength);
+Q.sa_strength = Math.round(Q.sa_strength); 
+!}
+go-to: menu
+
+**Paramilitary groups:**
+
+**Reichsbanner Schwarz-Rot-Gold**: The Reichsbanner is an organization affiliated with all of the democratic parties - the SPD, Z, and DDP, but primarily with the SPD. Historically, this has been an unarmed organization.
+
+Strength: [+ rb_strength +] thousand
+
+Милитаризация: [+ rb_militancy : militancy +]
+
+**Rotfrontkämpferbund (RFB)**: The "Red Front Fighter's League" is associated with the KPD.
+
+Strength: [+ rfb_strength +] thousand
+
+Милитаризация: [+ rfb_militancy : militancy +]
+
+**Der Stahlhelm**: A right-wing nationalist organization of primarily Great War veterans, descended from the *Freikorps* that emerged after the war. Associated with the DNVP.
+
+Strength: [+ sh_strength +] thousand
+
+Милитаризация: [+ sh_militancy : militancy +]
+
+**Sturmabteilung (SA)**: This is the nazi paramilitary group.
+
+Strength: [+ sa_strength +] thousand
+
+Милитаризация: [+ sa_militancy : militancy +]
+
+**Official military/paramilitary groups:**
+
+**Reichswehr**: [+ reichswehr_strength +] thousand troops. This is Germany's military.
+
+Loyalty: [+ reichswehr_loyalty : loyalty +]
+
+**Prussian police**: [+ prussian_police_strength +] thousand members.
+
+Loyalty: [+ prussian_police_loyalty : loyalty +]
+
+
+
+@factions
+go-to: neorevisionists if neorevisionism > 0; menu if neorevisionism <= 0
+
+**Internal factions of the SPD**
+
+Overall dissent: [+ dissent_percent : dissent +]
+
+**Left**
+
+Many leftists are former members of the USPD (the left-wing, anti-war Independent Social Democratic Party), or are young radicals. Many are interested in closer cooperation with the KPD, and some support extraparliamentary action.
+
+Strength: [+ left_strength : strength +]
+
+Dissent: [+ left_dissent : dissent +]
+
+**Centrists**
+
+Centrists in the SPD are followers of the doctrine of orthodox Marxism as expounded by Karl Kautsky and later Rudolf Hilferding. They seek a middle course between reform and revolution, while defending the democratic state.
+
+Strength: [+ center_strength : strength +]
+
+Dissent: [+ center_dissent : dissent +]
+
+**Labor**
+
+Many SPD members are also part of the ADGB, the federation of free trade unions. Their goal is economic reform and benefits for organized workers.
+
+Strength: [+ labor_strength : strength +]
+
+Dissent: [+ labor_dissent : dissent +]
+
+**Reformists**
+
+Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy against the far right and left. [? if spd_prussia : They are dominant in the state government of Prussia. ?]
+
+Strength: [+ reformist_strength : strength +]
+
+Dissent: [+ reformist_dissent : dissent +]
+
+@neorevisionists
+go-to: menu
+
+**Neorevisionists**
+
+Neorevisionists focus on defending the republic and expanding democracy, while also expanding the party's base beyond the working class to create a people's party. They support new propaganda methods and extraparliamentary action in defense of the republic.
+
+Strength: [+ neorevisionist_strength : strength +]
+
+Dissent: [+ neorevisionist_dissent : dissent +]
+
+

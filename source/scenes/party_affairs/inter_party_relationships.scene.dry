@@ -1,0 +1,122 @@
+title: Inter-Party Relationships
+new-page: true
+view-if: year <= 1932 and inter_party_relationships_timer <= 0
+tags: party_affairs
+is-card: true
+on-arrival: month_actions += 1; inter_party_relationships_timer = 6;
+card-image: img/weimar_coalition_2.jpg
+max-visits: 8
+
+= Inter-Party Relationships
+
+The SPD cannot govern by itself yet. Because we do not have an electoral majority, we need the support of other parties. Recently, our governments have consisted of the Weimar Coalition of the SPD, Center, and Democratic parties. We can reach out and build additional connections with these parties, or perhaps we can stand alone.
+
+- @liberals: Strengthen our bonds with the left-liberal German Democratic Party and conservative-liberal German People's Party.
+- @center: Strengthen our bonds with the Catholic Center Party.
+- @kpd: Work towards repairing relationships with the Communist Party.
+- @right_party_inter_relations: Заискивать перед крайне правыми партиями.
+- @spd_alone: The SPD can stand alone for now.
+- @easy_discard
+
+
+@kpd
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; kpd_inter_party_seen += 1
+go-to: kpd_blutmai if blutmai = 1; kpd_1 if blutmai = 0 and kpd_coalition_success = 0; kpd_2 if kpd_coalition_success = 1
+
+@kpd_1
+on-arrival: kpd_relation += 6*(1 - dissent); communist_coalition += 1 if kpd_inter_party_seen <= 1; reformist_dissent += 2; z_relation -= 2; dvp_relation -= 3
+
+The communists are suspicious of our overtures, especially the Stalinist leadership, who persist in calling us "social fascists". However, connections are made at the grassroots and local levels.
+
+@kpd_2
+on-arrival: kpd_relation += 8*(1 - dissent); communist_coalition += 1 if kpd_inter_party_seen <= 1; reformist_dissent += 2; z_relation -= 3; dvp_relation -= 3
+
+After the success of the coalition government with the KPD, they are much more amenable to us.
+
+@kpd_blutmai
+on-arrival: kpd_relation += 3*(1 - dissent)
+
+After the events of Blütmai, reconciling with the Communists is difficult, if not impossible. Nevertheless, we must try.
+
+@center
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1;
+go-to: center_op if z_in_government = 1 and spd_in_government = 0 and chancellor != "Brüning"; center_coalition if spd_in_government = 1 and z_in_government = 1; center_bruning if chancellor = "Brüning"
+
+@center_op
+on-arrival: z_relation += 5*(1 - dissent)
+
+We are currently in opposition to the Center-led government, but that does not preclude the general building of feelings of good will.
+
+@center_coalition
+on-arrival: z_relation += 10*(1 - dissent)
+
+We are currently coalition partners with them, so improving relations comes naturally.
+
+@center_bruning
+on-arrival: z_relation += 5*(1 - dissent)
+
+The Brüning semi-autocratic regime makes building friendly relations difficult, but not impossible.
+
+@liberals
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; ddp_relation += 5*(1 - dissent)
+go-to: dvp_stresemann if stresemann_dead = 0; dvp_loss if stresemann_dead = 1 and year <= 1930; dvp_moribound if year > 1930
+
+The DDP has been one of our closest allies through the course of the Republic.
+
+@dvp_stresemann
+on-arrival: dvp_relation += 8*(1 - dissent)
+
+Gustav Stresemann, the leader of the DVP is the best foreign policy leaders of the republic, and while he has previously expressed monarchist tendencies, he has been friendly towards us.
+
+@dvp_loss
+on-arrival: dvp_relation += 5*(1 - dissent)
+
+With the death of Gustav Stresemann, the DVP is much less likely to be accommodating of us. In addition, the liberal parties are electorally in decline, so perhaps our efforts are best spent elsewhere.
+
+However, given the influence of the DVP among the other right-leaning parties [? if president == "Hindenburg": and with President Hindenburg ?], it can still be helpful to influence them.
+
+@dvp_moribound
+on-arrival: dvp_relation += 5*(1 - dissent)
+
+The liberal parties (both the DDP and DVP) are electorally moribund, so perhaps our efforts are best spent elsewhere.
+
+However, given the influence of the DVP among the other right-leaning parties[? if president == "Hindenburg": and with President Hindenburg ?], it can still be helpful to influence them.
+
+@spd_alone
+
+Whether it is because we *cannot* or *will not*, we do not make ties with other parties at this moment.
+
+@right_party_inter_relations
+subtitle: -2 resources
+view-if: nsdap_relation > 3 or dnvp_relation > 20
+choose-if: resources >= 2
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 2; nsdap_relation -= 1 if spd_in_government == 1; dnvp_relation -= 1 if spd_in_government == 1; nsdap_relation -= 1 if (ideology == "left" or kpd_relation > 25)
+go-to: rpir1 if nsdap_relation <= 25; rpir2 if nsdap_relation >= 25
+
+@rpir1
+on-arrival: nsdap_relation += 4*(1 - dissent); dnvp_relation += 4*(1 - dissent)
+
+Наладить отношения с самыми правыми партиями было достаточно сложно, поскольку в их глазах мы безусловно являемся врагами.
+
+[? if spd_in_government = 1 : Кроме того, наше участие в правительстве делает в их глазах делает нас виновниками текущего положения Германии. ?]
+[? if kpd_relation > 25 : В их глазах мы слишком близки к коммунистам и это также осложняет наши взаимоотношения. ?]
+
+@rpir2
+on-arrival: nsdap_relation += 5*(1 - dissent); dnvp_relation += 5*(1 - dissent)
+
+Мы в глазах правых уже не главная угроза, но поддержание отношений на высоком уровне все равно выходит с трудом.
+
+[? if spd_in_government = 1 : Кроме того, наше участие в правительстве делает в их глазах делает нас виновниками текущего положения Германии. ?]
+[? if kpd_relation > 25 : В их глазах мы слишком близки к коммунистам и это также осложняет наши взаимоотношения. ?]
+
+- @return: Continue...
