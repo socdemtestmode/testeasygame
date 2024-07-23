@@ -1,51 +1,19 @@
 title: Status
 new-page: true
 is-special: true
-on-arrival: {!
-if (Q.unemployed) {
-    Q.unemployed_2 = Q.unemployed.toFixed(1);
-}
-if (Q.inflation) {
-    Q.inflation_2 = Q.inflation.toFixed(1);
-}
-!}
 
 = Статус
 
-[+ month : month +] [+ year +]
+Неделя: [+ week +]
 
 Ресуров доступно: [+ resources +]
 
-СДПГ: [? if spd_toleration : воздерживается от вотума недоверия ?][? if spd_in_government : в правительстве ?][? if spd_toleration == 0 and spd_in_government == 0 : в оппозиции ?]
-
-Раскол: [+ dissent_percent : dissent +]
-
-
-
-= Государство
-
-Рейхспрезидент: [+ president +]
-
-Рейхсканцлер: [+ chancellor +] ([+ chancellor_party +])
-
 Популярность партий:
-SPD: [+ spd_votes +]%
-Z + BVP: [+ z_votes +]%
-KPD: [+ kpd_votes +]%
-DDP: [+ ddp_votes +]%
-DVP: [+ dvp_votes +]%
-DNVP: [+ dnvp_votes +]%
-NSDAP: [+ nsdap_votes +]%
-Others: [+ other_votes +]%
+Игрок: [+ player_votes +]%
+Враг: [+ enemy_votes +]%
 
 
-[? if spd_in_government = 1 : Бюджет: [+ budget +] ?]
-
-Inflation: [+ inflation_2 +]%
-
-[? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
-
-Следующие выборы: [+ next_election_month : month +] [+ next_election_year +]
+Следующие выборы: [+ next_election_week : week +] [+ next_election_year +]
 
 [? if (communist_coalition >=3 and kpd_relation >=50) : Коммунисты согласны образовать с нами коалицию ?]
 

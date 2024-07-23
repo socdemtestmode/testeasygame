@@ -6,7 +6,7 @@
                  minute: 'numeric',
                  second: 'numeric',
                  year: 'numeric',
-                 month: 'short',
+                 week: 'numeric',
                  day: 'numeric' };
 
   var main = function(dendryUI) {
@@ -196,7 +196,7 @@
 
   window.onload = function() {
     window.dendryUI.loadSettings();
-    window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
+    window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 weeks.";
   };
 
 }());

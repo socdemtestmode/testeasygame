@@ -16,7 +16,7 @@ Major changes:
 Minor changes:
 
 - Can return cards to the hand on easy/normal difficulties.
-- If a vote of no confidence is held when new elections are happening in less 3 months, don't delay the elections.
+- If a vote of no confidence is held when new elections are happening in less 3 weeks, don't delay the elections.
 - New advisor actions: End toleration (for some left advisors)
 - Added descriptions of the internal party factions.
 - Some more tax options.
@@ -127,7 +127,7 @@ LaPorte, Norman H. “The German Communist Party in Saxony, 1924-1933 : Factio
 v0.10.1 - An easier Popular Front
 
 Changes:
-- KPD ultimatum set at 16 months, with an option to appeal for more time.
+- KPD ultimatum set at 16 weeks, with an option to appeal for more time.
 - More events cause changes to KPD relations, some other stat changes
 - Bug fixes - thanks everyone for reporting!
 =======
@@ -150,7 +150,7 @@ Other changes:
 v0.11.1 - bugfixes, save system updates
 
 Changes:
-- Fixed elections preempting other events - elections are now only held after all other events for the month have been resolved.
+- Fixed elections preempting other events - elections are now only held after all other events for the week have been resolved.
 - Save system: added functions to export to file, load from file
 - Supporting employers in labor disputes now lowers capital strike progress.
 

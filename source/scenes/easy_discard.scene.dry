@@ -1,16 +1,11 @@
 title: Return card to hand.
-view-if: difficulty <= 0
 go-to: root
 on-arrival: {!
-Q.month_actions -= 1;
+Q.week_actions -= 1;
 // return card to hand
 var card = this.state.lastPlayedCard;
 card.image = card.cardImage;
-if (Q.difficulty >= 0) {
-    this.state.currentHands['main'].push(card);
-} else {
-    this.state.currentHands['main.main_easy'].push(card);
-}
+this.state.currentHands['main'].push(card);
 // reset the timer...
 if (Q[card.id + "_timer"]) {
     Q[card.id + "_timer"] = 0;
