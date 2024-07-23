@@ -7,4 +7,4 @@ view-if: test_personalevent_timer = 0
 
 tested
 
-@game_over
+- @game_over
