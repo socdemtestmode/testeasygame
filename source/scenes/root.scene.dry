@@ -83,6 +83,8 @@ Q.timers = ['test_personalevent'];
 
 // personal affairs timers
 Q.test_personalevent_timer = 0;
+!}
+new-page: true
 
 > *"Я такого не говорил"*
 
