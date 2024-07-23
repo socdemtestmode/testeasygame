@@ -15,10 +15,4 @@ max-cards: 3
 title: Личные дела
 is-deck: true
 
-- #personal_affairs
-
-@agit
-title: Агитационные дела
-is-deck: true
-
-- #agit_affairs
+- #pers_affairs

@@ -1,0 +1,9 @@
+title: testeventoccured
+new-page: true 
+subtitle: eventik
+tags: event
+on-arrival: testevent_seen = 1
+max-visits: 1
+
+= TEST
+

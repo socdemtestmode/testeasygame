@@ -38,13 +38,10 @@ go-to: menu
 
 **Projected election results** (if the election were to be held now):
 
-# 1928: 30, 1930: 25, 1932: 22
 Я: [+ player_votes +]%
 
-# 1928: 15, 1930: 15, 1932: 
 Он: [+ enemy_votes +]%
 
-# 1928: 10, 1930: 13
 Против всех: [+ againstall_votes +]%
 
 

@@ -25,6 +25,8 @@ Q.time = 1;
 Q.week = 1;
 // how many actions have been taken this week?
 Q.week_actions = 0;
+Q.next_election_week = 15;
+Q.next_election_time = 15;
 
 // old demographics
 Q.old_demographics = 0;
@@ -77,7 +79,7 @@ Q.undecided_againstall = 100;
 Q.testevent_seen = 0;
 Q.total_win = 0
 
-Q.timers = ['testevent'];
+Q.timers = ['test_personalevent'];
 
 // personal affairs timers
 Q.test_personalevent_timer = 0;
@@ -94,7 +96,7 @@ For more information see the "Library" page on the top left. If this is your fir
 
 @start_game
 on-arrival: resources = 500
-go-to: start_game
+go-to: main
 
 = Типо стартанули
 

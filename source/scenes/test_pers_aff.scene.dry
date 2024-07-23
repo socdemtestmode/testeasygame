@@ -1,0 +1,7 @@
+title: Test
+new-page: true
+is-card: true
+tags: pers_affairs
+on-arrival: week_actions += 1
+view-if: test_personalevent_timer = 3
+card-image: img/portraits/BreitscheidRudolf.jpg
