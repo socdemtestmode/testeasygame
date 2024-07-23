@@ -3,6 +3,7 @@ new-page: true
 go-to: eg_menu
 on-arrival: {!
 // Achievements:
+this.achieve('game_completed');
 
 // Roter Zar von Preußen - At the end of the game, Otto Braun is president, chancellor, and minister-president of prussia at the same time.
 if (Q.resources == 500) {
