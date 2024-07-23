@@ -1,4 +1,4 @@
-title: Test
+title: Testeeeerev
 new-page: true
 is-card: true
 tags: pers_affairs
@@ -6,3 +6,5 @@ on-arrival: week_actions += 1; test_personalevent_timer = 5
 view-if: test_personalevent_timer = 0
 
 tested
+
+@game_over
