@@ -35,7 +35,13 @@ Q.old_demographics = 0;
 // party resources
 Q.resources = 200;
 
-// Proportion of different social groups
+// personal money
+Q.money = 5000;
+
+// Спойлер
+Q.spoiler = 0;
+
+// Number of different social groups
 Q.rabochie = 25; // industry and trade
 Q.inteligentsiya = 15; // 
 Q.kolhozniki = 20; // 
@@ -82,6 +88,11 @@ Q.timers = ['test_personalevent'];
 
 // personal affairs timers
 Q.test_personalevent_timer = 0;
+
+
+// affairs events
+Q.pro_shtab = 0;
+Q.halfpro_shtab = 0;
 !}
 new-page: true
 

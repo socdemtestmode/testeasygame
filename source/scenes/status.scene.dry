@@ -6,60 +6,42 @@ is-special: true
 
 Неделя: [+ week +]
 
-Ресуров доступно: [+ resources +]
+Средств избирательного фонда: [+ resources +]
 
-Популярность партий:
+Личных средств: [+ money +]
+ 
+
+Популярность:
 Игрок: [+ player_votes +]%
 Враг: [+ enemy_votes +]%
 
 
-Выбору будут на неделе: [+ next_election_week +]
+Выборы будут на неделе: [+ next_election_week +]
 
-# = Public Opinion
-
-@politics
-
-= Inter-party Relations
-
-Я: [+ player_votes +]%
-
-Он: [+ enemy_votes +]%
-
-Против всех \ Не опредилились: [+ againstall_votes +]%
-
-= Internal Factions of the SPD
-
-1
-
-@paramilitaries
-
-= Paramilitaries
-
-2
 
 @polls
+on-arrival: againstall_votes_library = (againstall_votes - undecided_votes)
 
 = Projected election results
-
 (if the election were to be held now):
 
 Я: [+ player_votes +]%
 
 Он: [+ enemy_votes +]%
 
-Против всех \ Не опредилились: [+ againstall_votes +]%
+Не опредилились: [+ undecided_votes +]%
+
+Против всех: [+ againstall_votes_library +]%
 
 **Detailed results for each demographic**
 
 Rabochie: Player: [+ rabochie_player_normalized +]%, Enemy: [+ rabochie_enemy_normalized +]%, Againstall: [+ rabochie_againstall_normalized +]%
 
-inteligentsiya: Player: [+ inteligentsiya_player_normalized +]%, Enemy: [+ inteligentsiya_enemy_normalized +]%, Againstall: [+ inteligentsiya_againstall_normalized +]%
+Inteligentsiya: Player: [+ inteligentsiya_player_normalized +]%, Enemy: [+ inteligentsiya_enemy_normalized +]%, Againstall: [+ inteligentsiya_againstall_normalized +]%
 
 Kolhozniki: Player: [+ kolhozniki_player_normalized +]%, Enemy: [+ kolhozniki_enemy_normalized +]%, Againstall: [+ kolhozniki_againstall_normalized +]%
 
 Nomenklatura: Player: [+ nomenklatura_player_normalized +]%, Enemy: [+ nomenklatura_enemy_normalized +]%, Againstall: [+ nomenklatura_againstall_normalized +]%
-
-Undecided: Player: [+ undecided_player_normalized +]%, Enemy: [+ undecided_enemy_normalized +]%, Againstall: [+ undecided_againstall_normalized +]%
 
 
 @other

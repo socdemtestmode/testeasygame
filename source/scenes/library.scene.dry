@@ -49,15 +49,15 @@ on-arrival: againstall_votes_library = (againstall_votes - undecided_votes)
 
 
 **Detailed results for each demographic**
+
+
 Rabochie: Player: [+ rabochie_player_normalized +]%, Enemy: [+ rabochie_enemy_normalized +]%, Againstall: [+ rabochie_againstall_normalized +]%
 
-inteligentsiya: Player: [+ inteligentsiya_player_normalized +]%, Enemy: [+ inteligentsiya_enemy_normalized +]%, Againstall: [+ inteligentsiya_againstall_normalized +]%
+Inteligentsiya: Player: [+ inteligentsiya_player_normalized +]%, Enemy: [+ inteligentsiya_enemy_normalized +]%, Againstall: [+ inteligentsiya_againstall_normalized +]%
 
 Kolhozniki: Player: [+ kolhozniki_player_normalized +]%, Enemy: [+ kolhozniki_enemy_normalized +]%, Againstall: [+ kolhozniki_againstall_normalized +]%
 
 Nomenklatura: Player: [+ nomenklatura_player_normalized +]%, Enemy: [+ nomenklatura_enemy_normalized +]%, Againstall: [+ nomenklatura_againstall_normalized +]%
-
-Undecided: Player: [+ undecided_player_normalized +]%, Enemy: [+ undecided_enemy_normalized +]%, Againstall: [+ undecided_againstall_normalized +]%
 
 @parties
 go-to: menu

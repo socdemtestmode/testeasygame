@@ -4,6 +4,7 @@ subtitle: eventik
 tags: event
 on-arrival: testevent_seen = 1
 max-visits: 1
+priority: 2
 
 = TEST
 
