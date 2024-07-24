@@ -31,7 +31,6 @@ Q.next_election_time = 15;
 // old demographics
 Q.old_demographics = 0;
 
-
 // party resources
 Q.resources = 200;
 
@@ -56,9 +55,6 @@ Q.parties = ['player', 'enemy', 'againstall'];
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
 
-// Support for party by social group
-// they don't have to sum to 100 since the electoral calculations will be normalized.
-
 Q.rabochie_player = 10;
 Q.rabochie_enemy = 20;
 Q.rabochie_againstall = 10;
@@ -79,7 +75,6 @@ Q.undecided_player = 0;
 Q.undecided_enemy = 0;
 Q.undecided_againstall = 100;
 
-
 // Events: what has occurred?
 Q.testevent_seen = 0;
 Q.total_win = 0
@@ -88,7 +83,6 @@ Q.timers = ['test_personalevent'];
 
 // personal affairs timers
 Q.test_personalevent_timer = 0;
-
 
 // affairs events
 Q.pro_shtab = 0;

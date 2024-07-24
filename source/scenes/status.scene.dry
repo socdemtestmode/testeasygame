@@ -6,21 +6,38 @@ is-special: true
 
 Неделя: [+ week +]
 
-Средств избирательного фонда: [+ resources +]
+Ресуров доступно: [+ resources +]
 
-Личных средств: [+ money +]
- 
-
-Популярность:
+Популярность партий:
 Игрок: [+ player_votes +]%
 Враг: [+ enemy_votes +]%
 
 
 Выборы будут на неделе: [+ next_election_week +]
 
+# = Public Opinion
+
+@politics
+
+= Inter-party Relations
+
+Я: [+ player_votes +]%
+
+Он: [+ enemy_votes +]%
+
+Против всех \ Не опредилились: [+ againstall_votes +]%
+
+= Internal Factions of the SPD
+
+1
+
+@paramilitaries
+
+= Paramilitaries
+
+2
 
 @polls
-on-arrival: againstall_votes_library = (againstall_votes - undecided_votes)
 
 = Projected election results
 (if the election were to be held now):
@@ -29,9 +46,7 @@ on-arrival: againstall_votes_library = (againstall_votes - undecided_votes)
 
 Он: [+ enemy_votes +]%
 
-Не опредилились: [+ undecided_votes +]%
-
-Против всех: [+ againstall_votes_library +]%
+Против всех: [+ againstall_votes +]% (из них не опредилились: [+ undecided_votes +]%
 
 **Detailed results for each demographic**
 
