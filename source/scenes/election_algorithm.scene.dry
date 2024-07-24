@@ -1,4 +1,3 @@
-title: Election
 on-arrival: {!
     // Helper function to round numbers to two decimal places accurately
     function roundToTwo(num) {
@@ -47,6 +46,26 @@ on-arrival: {!
     if (discrepancy !== 0) {
         var last_party = sorted_parties[sorted_parties.length - 1];
         Q[last_party+'_votes'] = roundToTwo(Q[last_party+'_votes'] + discrepancy);
+    }
+
+    // Calculate "against all" and "undecided" votes
+    Q.againstall_votes = 0;
+    Q.undecided_votes = Q.undecided_againstall;
+
+    for (var c of Q.classes) {
+        if (c !== 'undecided') {
+            Q.againstall_votes += Q[c+'_againstall'];
+        }
+    }
+
+    Q.againstall_votes = roundToTwo(Q.againstall_votes);
+
+    // Check if total votes sum to 100%
+    var total_calculated_votes = Q.player_votes + Q.enemy_votes + Q.againstall_votes + Q.undecided_votes;
+    var vote_discrepancy = roundToTwo(100 - total_calculated_votes);
+
+    if (vote_discrepancy !== 0) {
+        Q.againstall_votes = roundToTwo(Q.againstall_votes + vote_discrepancy);
     }
 !}
 go-to: jumpScene

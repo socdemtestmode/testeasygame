@@ -25,7 +25,7 @@ is-special: true
 
 Он: [+ enemy_votes +]%
 
-Против всех: [+ againstall_votes +]%
+Против всех \ Не опредилились: [+ againstall_votes +]%
 
 = Internal Factions of the SPD
 
@@ -47,7 +47,7 @@ is-special: true
 
 Он: [+ enemy_votes +]%
 
-Против всех: [+ againstall_votes +]%
+Против всех \ Не опредилились: [+ againstall_votes +]%
 
 **Detailed results for each demographic**
 

@@ -48,9 +48,6 @@ Q.parties = ['player', 'enemy', 'againstall'];
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
 
-Q.classes = ['rabochie', 'inteligentiya', 'kolhozniki', 'nomenklatura', 'undecided'];
-Q.parties = ['player', 'enemy', 'againstall'];
-
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
 
