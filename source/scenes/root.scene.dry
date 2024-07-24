@@ -79,10 +79,10 @@ Q.undecided_againstall = 100;
 Q.testevent_seen = 0;
 Q.total_win = 0
 
-Q.timers = ['test_personalevent'];
+Q.timers = ['speech'];
 
 // personal affairs timers
-Q.test_personalevent_timer = 0;
+Q.speech_timer = 0;
 
 // affairs events
 Q.pro_shtab = 0;

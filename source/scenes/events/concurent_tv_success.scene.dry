@@ -1,0 +1,10 @@
+title: TV
+new-page: true 
+subtitle: Соперник выступил с речью
+tags: event
+view-if: tv_speech_enemy_seen = 0
+on-arrival: tv_speech_enemy_seen = 1; rabochie_enemy += 2; kolhozniki_enemy += 2; nomenklatura_enemy += 4; inteligentsiya_enemy += 1; undecided -= 1
+max-visits: 1
+frequency: 25
+
+Соперник выступил по ТВ с программной речью. Как всегда, он читал не им самим и неизвестно когда написанный текст, но зрителям было будто всё равно, для них это словно приятная реклама хорошо продающегося товара. И они купят его снова.
