@@ -1,4 +1,4 @@
-title: Back to main
+title: Вернуться назад
 go-to: root
 on-arrival: week_actions -= 1
 frequency: 111111111111111111111111111111111111111
