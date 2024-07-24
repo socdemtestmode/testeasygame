@@ -39,9 +39,10 @@ go-to: menu
 **Projected election results** (if the election were to be held now):
 
 Я: [+ player_votes +]%
+
 Он: [+ enemy_votes +]%
+
 Против всех: [+ againstall_votes +]%
-Не определились: [+ undecided_votes +]%
 
 
 **Detailed results for each demographic**
