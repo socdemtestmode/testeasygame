@@ -66,10 +66,9 @@ if (choices && choices[0].title != "Continue...") {
 if (typeof window !== "undefined" && window.generateBar) {
 }
 
-// Add the new lines here
+// пересчет определевшихся
 Q.total_population = Q.rabochie + Q.inteligentsiya + Q.kolhozniki + Q.nomenklatura + Q.undecided;
 Q.undecided_votes = (Q.undecided / Q.total_population) * 100;
-}
 !}
 go-to: events_choice if has_event = 1; main if has_event = 0
 
