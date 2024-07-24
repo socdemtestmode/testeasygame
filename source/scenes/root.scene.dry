@@ -55,15 +55,15 @@ Q.parties = ['player', 'enemy', 'againstall'];
 
 Q.rabochie_player = 10;
 Q.rabochie_enemy = 20;
-Q.rabochie_againstall = 0;
+Q.rabochie_againstall = 10;
 
 Q.inteligentsiya_player = 25;
 Q.inteligentsiya_enemy = 20;
-Q.inteligentsiya_againstall = 1;
+Q.inteligentsiya_againstall = 15;
 
 Q.kolhozniki_player = 20;
 Q.kolhozniki_enemy = 40;
-Q.kolhozniki_againstall = 0;
+Q.kolhozniki_againstall = 5;
 
 Q.nomenklatura_player = 0;
 Q.nomenklatura_enemy = 75;
