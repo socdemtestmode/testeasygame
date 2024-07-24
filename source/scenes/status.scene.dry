@@ -53,7 +53,7 @@ is-special: true
 
 Rabochie: Player: [+ rabochie_player_normalized +]%, Enemy: [+ rabochie_enemy_normalized +]%, Againstall: [+ rabochie_againstall_normalized +]%
 
-Inteligentiya: Player: [+ inteligentiya_player_normalized +]%, Enemy: [+ inteligentiya_enemy_normalized +]%, Againstall: [+ inteligentiya_againstall_normalized +]%
+inteligentsiya: Player: [+ inteligentsiya_player_normalized +]%, Enemy: [+ inteligentsiya_enemy_normalized +]%, Againstall: [+ inteligentsiya_againstall_normalized +]%
 
 Kolhozniki: Player: [+ kolhozniki_player_normalized +]%, Enemy: [+ kolhozniki_enemy_normalized +]%, Againstall: [+ kolhozniki_againstall_normalized +]%
 

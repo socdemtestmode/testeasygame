@@ -37,12 +37,14 @@ Q.resources = 200;
 
 // Proportion of different social groups
 Q.rabochie = 25; // industry and trade
-Q.inteligentiya = 15; // 
+Q.inteligentsiya = 15; // 
 Q.kolhozniki = 20; // 
 Q.nomenklatura = 10;
 Q.undecided = 30;
+Q.total_population = Q.rabochie + Q.inteligentsiya + Q.kolhozniki + Q.nomenklatura + Q.undecided;
+Q.undecided_votes = (Q.undecided / Q.total_population) * 100;
 
-Q.classes = ['rabochie', 'inteligentiya', 'kolhozniki', 'nomenklatura', 'undecided'];
+Q.classes = ['rabochie', 'inteligentsiya', 'kolhozniki', 'nomenklatura', 'undecided'];
 Q.parties = ['player', 'enemy', 'againstall'];
 
 // Support for party by social group
@@ -55,9 +57,9 @@ Q.rabochie_player = 10;
 Q.rabochie_enemy = 20;
 Q.rabochie_againstall = 0;
 
-Q.inteligentiya_player = 25;
-Q.inteligentiya_enemy = 20;
-Q.inteligentiya_againstall = 0;
+Q.inteligentsiya_player = 25;
+Q.inteligentsiya_enemy = 20;
+Q.inteligentsiya_againstall = 0;
 
 Q.kolhozniki_player = 20;
 Q.kolhozniki_enemy = 40;
