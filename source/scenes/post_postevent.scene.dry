@@ -71,7 +71,8 @@ go-to: events_choice if has_event = 1; main if has_event = 0
 = Неделя № [+ week +]
 
 @events_choice
+max-choices: 1
 
-- #event
+- #event: Узнать о действиях соперника
 
 # This scene is solely for updating numbers after events, and routing to special events.
