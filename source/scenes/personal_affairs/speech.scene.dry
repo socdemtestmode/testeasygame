@@ -4,7 +4,7 @@ is-card: true
 tags: pers_affairs
 on-arrival: week_actions += 1;
 max-visits: 5
-max-choices: 3
+max-choices: 4
 
 = РЕЧЬ
 
@@ -15,6 +15,7 @@ max-choices: 3
 - @university
 - @square
 - @pomoika
+- @return: Для речи еще не время.
 
 @tv 
 title: В телестудии
