@@ -35,7 +35,6 @@ set-jump: election_projections
 
 @election_projections
 go-to: menu
-on-arrival: againstall_votes_library = (againstall_votes - undecided_votes)
 
 **Projected election results** (if the election were to be held now):
 
