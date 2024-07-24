@@ -35,6 +35,7 @@ set-jump: election_projections
 
 @election_projections
 go-to: menu
+on-arrival: againstall_votes_library = (againstall_votes - undecided_votes)
 
 **Projected election results** (if the election were to be held now):
 
@@ -44,7 +45,7 @@ go-to: menu
 
 Не опредилились: [+ undecided_votes +]%
 
-Против всех: [+ againstall_votes-undecided_votes +]%
+Против всех: [+ againstall_votes_library +]%
 
 
 **Detailed results for each demographic**
