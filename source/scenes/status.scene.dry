@@ -44,10 +44,9 @@ is-special: true
 (if the election were to be held now):
 
 Я: [+ player_votes +]%
-
 Он: [+ enemy_votes +]%
-
-Против всех \ Не опредилились: [+ againstall_votes +]%
+Против всех: [+ againstall_votes +]%
+Не определились: [+ undecided_votes +]%
 
 **Detailed results for each demographic**
 
