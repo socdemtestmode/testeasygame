@@ -15,7 +15,7 @@ max-choices: 4
 - @university
 - @square
 - @pomoika
-- @return: Для речи еще не время.
+- @return
 
 @tv 
 title: В телестудии
