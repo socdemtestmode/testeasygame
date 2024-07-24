@@ -44,7 +44,7 @@ go-to: menu
 
 Не опредилились: [+ undecided_votes +]%
 
-Против всех: [+ againstall_votes +]%
+Против всех: [+ againstall_votes-undecided_votes +]%
 
 
 **Detailed results for each demographic**

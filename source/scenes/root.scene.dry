@@ -59,7 +59,7 @@ Q.rabochie_againstall = 0;
 
 Q.inteligentsiya_player = 25;
 Q.inteligentsiya_enemy = 20;
-Q.inteligentsiya_againstall = 0;
+Q.inteligentsiya_againstall = 1;
 
 Q.kolhozniki_player = 20;
 Q.kolhozniki_enemy = 40;
