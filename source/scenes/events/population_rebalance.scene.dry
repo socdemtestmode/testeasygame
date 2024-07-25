@@ -3,14 +3,20 @@ subtitle: Произошло изменение состава или числе
 on-arrival: {!
 Q.rebalance_population =  Math.floor(Math.random() * 2) + 1;
 !}
-go-to: deportation_random if rebalance_population = 1; new_nomenklatura if rebalance_population = 2; 3 if rebalance_population = 3; 4 if rebalance_population = 4; 5 if rebalance_population = 5
 frequency: 100000
+go-to: rebalance_pop2
+
+@rebalance_pop2
+go-to: deportation_random if rebalance_population = 1; new_nomenklatura if rebalance_population = 2;
+
 
 @deportation_random
+title: Депортация
 on-arrival: kolhozniki -= 5
 go-to: deportation_random_2
 
 @deportation_random_2
+title: Депортация 2
 on-arrival: {!
 Q.deported_number = Math.round((5 / (Q.total_population - Q.undecided)) * 100 * 100) / 100
 !}
@@ -18,10 +24,12 @@ Q.deported_number = Math.round((5 / (Q.total_population - Q.undecided)) * 100 * 
 Общественынми помощниками рыночных хозяйств было обнаружено, что многие из сельхозпроизводителей ведут свою деятельность на земле незаконно занятой у собственников. После тщательно проведенного по частному приказу детективного расследования, суды приняли решения о выселении за пределы округа тысяч бывших хозяйствующих на земле субъектов. В общей сложности мы лишились [+ deported_number +]% населения.
 
 @new_nomenklatura
+title: Новая номенклатура
 on-arrival: nomenklatura += 4; rabochie -= 2; kolhozniki -= 1; inteligentsiya -= 1
 go-to: new_nomenklatura_2
 
 @new-nomenklatura_2
+title: Новая номенклатура 2
 on-arrival: {!
 Q.new_nomenklatura_number = Math.round((4 / (Q.total_population - Q.undecided)) * 100 * 100) / 100
 !}
