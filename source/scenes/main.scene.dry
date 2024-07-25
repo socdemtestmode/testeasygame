@@ -2,6 +2,7 @@ title: Следующая неделя
 set-bg: img/map_2.jpg
 is-hand: true
 max-cards: 3
+on-arrival: event_seen = 0
 
 # TODO: should this really be a new page?
 

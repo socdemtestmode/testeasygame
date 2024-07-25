@@ -73,11 +73,16 @@ Q.againstall_votes_library = Math.round((Q.againstall_votes - Q.undecided_votes)
 !}
 go-to: events_choice if has_event = 1; main if has_event = 0
 
-= Неделя № [+ week +]
+
 
 @events_choice
+go-to: events_choice_2 if event_seen = 0; main if event_seen = 1
+
+@events_choice_2
+on-arrival: event_seen = 1
 max-choices: 1
 
+= Неделя № [+ week +]
 
 - #event: Узнать о действиях соперника
 
