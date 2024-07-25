@@ -75,8 +75,8 @@ Q.undecided_player = 0;
 Q.undecided_enemy = 0;
 Q.undecided_againstall = 100;
 
-// Events: what has occurred?
-Q.testevent_seen = 0;
+// Main events: what has occurred?
+Q.event_seen = 0;
 Q.total_win = 0;
 
 // Program events seen and selected
