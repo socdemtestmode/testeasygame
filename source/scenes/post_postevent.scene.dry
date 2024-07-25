@@ -77,7 +77,7 @@ go-to: events_choice if has_event = 1; main if has_event = 0
 
 @events_choice
 max-choices: 1
-set-jump: main
+
 
 - #event: Узнать о действиях соперника
 
