@@ -82,6 +82,6 @@ max-choices: 1
 
 = Неделя № [+ week +]
 
-- #event: Узнать о действиях соперника
+- #event: Узнать о произошедшем за неделю
 
 # This scene is solely for updating numbers after events, and routing to special events.
