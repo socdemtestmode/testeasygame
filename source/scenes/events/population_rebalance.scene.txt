@@ -5,10 +5,9 @@ Q.rebalance_population =  Math.floor(Math.random() * 2) + 1;
 !}
 frequency: 100000
 go-to: rebalance_pop2
-
+### Эвент сломан
 @rebalance_pop2
 go-to: deportation_random if rebalance_population = 1; new_nomenklatura if rebalance_population = 2;
-
 
 @deportation_random
 title: Депортация
