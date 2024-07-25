@@ -77,9 +77,13 @@ Q.undecided_againstall = 100;
 
 // Events: what has occurred?
 Q.testevent_seen = 0;
-Q.total_win = 0
+Q.total_win = 0;
 
-Q.timers = ['speech'];
+// Program events seen and selected
+Q.program_selected = 0;
+Q.economic_program_seen = 0;
+
+Q.timers = ['speech', 'program'];
 
 // personal affairs timers
 Q.speech_timer = 0;

@@ -1,0 +1,34 @@
+title: Предвыборный штаб
+new-page: true
+is-card: true
+tags: pers_affairs
+on-arrival: week_actions += 1; program_timer = 2
+view-if: week < 5
+max-visits: 1
+max-choices: 3
+
+= ФОРМИРОВАНИЕ ПРОГРАММЫ
+
+- @economic
+
+@economic
+title: К экономической части программы
+view-if: economic_program_seen = 0
+
+Нам нужно выбрать основу экономической политики которую мы будем отстаивать
+
+- #economic_program
+
+@nalogi
+title: Введем высокие налоги
+tags: economic_program
+on-arrival: program_selected += 1; economic_program_seen = 1; kolhozniki_player += 4; rabochie_player += 3; nomenklatura_player -= 3; inteligentsiya_player += 2  
+
+Вы, наверное, не ожидали - но этим пунктом вы никого не напугали. Местные жители живут без налогов уже несколько десятилетий и с интересом относятся к идеи ввода налогов. По их мнению, это всего-лишь какие-то не очень большие платежи за которые можно получить большую выгоду. Идея не понравилась только списочникам - если вы действительно введете налоги, то собирать их придется им, чего они страшно не желают.
+
+@nalogi
+title: Отменим налоги
+tags: economic_program
+on-arrival: program_selected += 1; economic_program_seen = 1; 
+
+Вас не поняли. Никаких налогов давным-давно уже нет, что Вы собираетесь отменить? 
