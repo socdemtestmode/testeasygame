@@ -93,7 +93,7 @@ Q.pro_shtab = 0;
 Q.halfpro_shtab = 0;
 
 // Имя противника задается
-Q.enemyname = Math.floor(Math.random() * 2498;
+Q.enemyname = (Math.floor(Math.random() * 2498);
 !}
 new-page: true
 
