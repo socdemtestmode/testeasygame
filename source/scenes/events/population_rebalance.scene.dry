@@ -1,6 +1,6 @@
 title: Население
 subtitle: Произошло изменение состава или численности населения
-on-arrival: 
+tags: event
 frequency: 1000
 max-choices: 1
 max-visits: 1
