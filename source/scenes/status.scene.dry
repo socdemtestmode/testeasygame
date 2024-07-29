@@ -11,8 +11,8 @@ is-special: true
 
 
 Популярность партий:
-Игрок: [+ player_votes +]%
-Враг: [+ enemy_votes +]%
+Вы: [+ player_votes +]%
+[+ enemyname : enemyname +]: [+ enemy_votes +]%
 
 
 Выборы будут на неделе: [+ next_election_week +]
@@ -46,9 +46,9 @@ is-special: true
 = Projected election results
 (if the election were to be held now):
 
-Я: [+ player_votes +]%
+Вы: [+ player_votes +]%
 
-Он: [+ enemy_votes +]%
+[+ enemyname : enemyname +]: [+ enemy_votes +]%
 
 Не опредилились: [+ undecided_votes +]%
 
