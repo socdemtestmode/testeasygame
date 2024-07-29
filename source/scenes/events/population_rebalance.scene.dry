@@ -11,6 +11,7 @@ max-visits: 1
 
 @deportation_random
 title: Депортация
+tags: rebalancepop
 on-arrival: kolhozniki -= 5
 go-to: deportation_random_2
 
@@ -26,6 +27,7 @@ Q.deported_number = Math.round((5 / (Q.total_population - Q.undecided)) * 100 * 
 
 @new_nomenklatura
 title: Новая номенклатура
+tags: rebalancepop
 on-arrival: nomenklatura += 4; rabochie -= 2; kolhozniki -= 1; inteligentsiya -= 1
 go-to: new_nomenklatura_2
 
