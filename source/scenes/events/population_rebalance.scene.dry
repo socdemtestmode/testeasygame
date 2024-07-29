@@ -51,7 +51,6 @@ Q.new_nomenklatura_number = Math.round((5 / (Q.total_population - Q.undecided)) 
 title: Новая номенклатура
 tags: rebalancepop
 frequency: 25
-on-arrival:
 on-arrival: {!
 Q.new_inteligentsiya_number = Math.round((2 / (Q.total_population - Q.undecided)) * 100 * 100) / 100
 !} 
