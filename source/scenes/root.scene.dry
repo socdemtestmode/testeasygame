@@ -37,8 +37,11 @@ Q.resources = 200;
 // personal money
 Q.money = 5000;
 
-// Спойлер
+// Спойлер, т.е. показатель неправдоподобности компании.
 Q.spoiler = 0;
+
+// Показатель нарушений. 1 - легкое 2500 штраф. 2 - тяжелое штраф 5000. 3 - геймовер.
+Q.crime = 0;
 
 // Number of different social groups
 Q.rabochie = 25; // industry and trade
@@ -57,7 +60,7 @@ Q.parties = ['player', 'enemy', 'againstall'];
 
 Q.rabochie_player = 10;
 Q.rabochie_enemy = 20;
-Q.rabochie_againstall = 3;
+Q.rabochie_againstall = 2.5;
 
 Q.inteligentsiya_player = 25;
 Q.inteligentsiya_enemy = 20;
