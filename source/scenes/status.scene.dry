@@ -8,10 +8,13 @@ is-special: true
 
 Ресуров доступно: [+ resources +]
 
+
+
 Популярность партий:
 Игрок: [+ player_votes +]%
 Враг: [+ enemy_votes +]%
 
+Имя соперника: [+ enemyname : enemyname +]
 
 Выборы будут на неделе: [+ next_election_week +]
 

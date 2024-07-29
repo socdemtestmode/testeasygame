@@ -5,14 +5,16 @@ on-arrival: {!
 // Achievements:
 this.achieve('game_completed');
 
-// Roter Zar von Preußen - At the end of the game, Otto Braun is president, chancellor, and minister-president of prussia at the same time.
+// Халявщик
 if (Q.resources == 500) {
     this.achieve('fiftyhundredresources');
 }
-// Sowjet Sozialistische Republik - войти в состав СССР..
-if (Q.resources ==0) {
+// Bankrot
+if (Q.resources == 0) {
     this.achieve('bankrot');
 }
+// if (Q.money == 5000){
+    this.achieve('netshtafov');
 !}
 
 = End
@@ -53,6 +55,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if game_achievement_bankrot : **0 ресов** - банкрот ?]
 
+[? if game_achievement_netshtafov : **Нет штрафов** - пройти игру и не заплатить ни одного штрафа ?]
 = Completed Achievements Overall
 
 
@@ -60,11 +63,15 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if achievement_bankrot : **0 ресов** - банкрот ?]
 
+[? if achievement_netshtafov : **Нет штрафов** - пройти игру и не заплатить ни одного штрафа ?]
+
 = Incomplete Achievements
 
 [? if not achievement_fiftyhundredresources : **500 ресов** - попятьсот. ?]
 
 [? if not achievement__bankrot : **0 ресов** - банкрот ?]
+
+[? if not achievement_netshtafov : **Нет штрафов** - пройти игру и не заплатить ни одного штрафа ?]
 
 @end_game
 game-over: true
