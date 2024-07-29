@@ -16,6 +16,7 @@ if (Q.resources == 0) {
 // Нет штрафов
 if (Q.money == 5000) {
     this.achieve('netshtafov');
+}
 !}
 
 = End
