@@ -8,10 +8,12 @@ is-special: true
 
 Ресуров доступно: [+ resources +]
 
+Личных средств: [+ money +]
 
+Популярность:
 
-Популярность партий:
 Вы: [+ player_votes +]%
+
 [+ enemyname : enemyname +]: [+ enemy_votes +]%
 
 
@@ -21,11 +23,11 @@ is-special: true
 
 @politics
 
-= Inter-party Relations
+=  Результаты соцопросов
 
-Я: [+ player_votes +]%
+Вы: [+ player_votes +]%
 
-Он: [+ enemy_votes +]%
+[+ enemyname : enemyname +]: : [+ enemy_votes +]%
 
 Не опредилились: [+ undecided_votes +]%
 
