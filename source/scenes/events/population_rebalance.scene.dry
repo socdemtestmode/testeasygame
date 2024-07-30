@@ -1,13 +1,19 @@
 title: Население
-subtitle: Произошло изменение состава или численности населения
+subtitle: Часткомстат сообщает о значительном изменении в численности населения.
 tags: event
 frequency: 100
 max-choices: 1
 max-visits: 1
+go-to: poprebalance1
 
-Часткомстат сообщает о значительном изменении в структуре населения.
+@poprebalance1
+on-arrival: {!
+Q.poprandom = Math.floor(Math.random() * 3)
+!}
+go-to: poprebalance2
 
-- #rebalancepop: Узнать что случилось.
+@poprebalance2
+go-to: deportation_random if poprandom = 0; new_nomenklatura if poprandom = 1; parahod if poprandom = 2
 
 @deportation_random
 title: Депортация
