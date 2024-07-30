@@ -14,7 +14,7 @@ max-choices: 4
 
 @marchfreetrade
 title: Митинг "За свободу торговли!"
-tag: meeting_theme
+tags: meeting_theme
 on-arrival: inteligentsiya_player += 1
 
 = СВОБОДНА ТОРГОВЛЯ - СВОБОДЕН ЧЕЛОВЕК
@@ -23,7 +23,7 @@ on-arrival: inteligentsiya_player += 1
 
 @marchsolidaritywithliberland
 title: Митинг солидарности с Либерлендом
-tag: meeting_theme
+tags: meeting_theme
 on-arrival: inteligentsiya_player += 3; rabochie_player += 1; nomenklatura_player += 1; kolhozniki_player += 0.5
 
 = ЖИВИ, ЛИБЕРЛЕНД!
@@ -33,7 +33,7 @@ on-arrival: inteligentsiya_player += 3; rabochie_player += 1; nomenklatura_playe
 @marchpsihov
 title: Митинг в честь месячника психического здоровья
 unavailable-subtitle: Ваш штаб саботирует митинг с такой темой
-tag: meeting_theme
+tags: meeting_theme
 choose-if: pro_shtab = 0 and halfpro_shtab = 0
 frequency: 30
 on-arrival: inteligentsiya_player += 1; nomenklatura_player -= 1; rabochie_player -= 1; kolhozniki_player -= 1; spoiler += 2
@@ -45,7 +45,8 @@ on-arrival: inteligentsiya_player += 1; nomenklatura_player -= 1; rabochie_playe
 
 @marchon
 title: Митинг персонально против конкурента на выборах
-tag: meeting_theme
+tags: meeting_theme
+
 view-if: player_votes < enemy_votes
 frequency: 85
 on-arrival: rabochie_enemy -= 1; inteligentsiya_enemy -= 2; inteligentsiya_againstall += 1; undecided -= 1; spoiler -= 1
