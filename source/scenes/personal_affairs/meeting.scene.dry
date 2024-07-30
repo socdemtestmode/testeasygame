@@ -4,7 +4,7 @@ is-card: true
 max-visits: 3
 tags: pers_affairs
 on-arrival: meeting_timer += 3
-view-if: week > 3
+view-if: week > 3 and meeting_timer = 0
 max-choices: 4
 
 Что может быть менее эффективным средством агитации как не бесполезные массовые сборища? 
@@ -46,14 +46,22 @@ on-arrival: inteligentsiya_player += 1; nomenklatura_player -= 1; rabochie_playe
 @marchon
 title: Митинг персонально против конкурента на выборах
 tags: meeting_theme
-
 view-if: player_votes < enemy_votes
 frequency: 85
 on-arrival: rabochie_enemy -= 1; inteligentsiya_enemy -= 2; inteligentsiya_againstall += 1; undecided -= 1; spoiler -= 1
 
 = ГОЛОСУЙ ИЛИ ПРОИГРАЕШЬ
 
-На митинге Вы и ваши сторонники несли перечеркнутые портреты вашего конкурента, лозунги "Не допустим победы [+ enemyname : enemyname +] !". 
+На митинге Вы и ваши сторонники несли перечеркнутые портреты вашего конкурента, лозунги "[+ enemyname : enemyname +] не пройдет !". 
 
 Много народу собрать не удалось, но Вы все же заявили о себе как реальной альтернативе. 
 
+@marchrevolt
+title: Митинг против частно-партийного режима
+tags: meeting_theme
+frequency: 75
+on-arrival: rabochie_player -= 2; kolhozniki_player -= 4; inteligentsiya_player += 2; rabochie_againstall -= 1; nomenklatura_againstall = 0; nomenklatura_player -= 20; undecided *= 0.6; nomenklatura -= 1; rabochie += 1; spoiler -= 3; crime += 1
+
+= ДОЛОЙ ВЛАСТЬ ЧАСТНЫХ ПАРТОКРАТОВ
+
+Ваш митинг скоро разогнали из водомётов представители особого отряда частной милиции. Вас обвинили в попытке частного переворота. Конечно, это полная чепуха, но от ответственности уйти не удастся. Ваш крошечный митинг, первый разогнаненный за десятилетия, вызвал на бирже настоящую панику, акции списочников падают.
