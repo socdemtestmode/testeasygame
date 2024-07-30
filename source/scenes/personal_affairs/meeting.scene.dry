@@ -1,0 +1,58 @@
+title: Устроить митинг
+new-page: true
+is-card: true
+max-visits: 3
+tags: pers_affairs
+on-arrival: meeting_timer += 3
+view-if: week > 3
+max-choices: 4
+
+Что может быть менее эффективным средством агитации как не бесполезные массовые сборища? 
+
+- #meeting_theme
+- @easy_discard
+
+@marchfreetrade
+title: Митинг "За свободу торговли!"
+tag: meeting_theme
+on-arrival: inteligentsiya_player += 1
+
+= СВОБОДНА ТОРГОВЛЯ - СВОБОДЕН ЧЕЛОВЕК
+
+Что может быть избитее свободы торговли? С Вами на митинг вышла жалкая кучка безродных прослоечников, которые в принципе ищут любой повод погулять.
+
+@marchsolidaritywithliberland
+title: Митинг солидарности с Либерлендом
+tag: meeting_theme
+on-arrival: inteligentsiya_player += 3; rabochie_player += 1; nomenklatura_player += 1; kolhozniki_player += 0.5
+
+= ЖИВИ, ЛИБЕРЛЕНД!
+
+Далекий, а может быть и не очень, Либерленд оказывается хорошо известен всем жителям округа. Все глубоко сочувствуют трагедии Либерленда. 
+
+@marchpsihov
+title: Митинг в честь месячника психического здоровья
+unavailable-subtitle: Ваш штаб саботирует митинг с такой темой
+tag: meeting_theme
+choose-if: pro_shtab = 0 and halfpro_shtab = 0
+frequency: 30
+on-arrival: inteligentsiya_player += 1; nomenklatura_player -= 1; rabochie_player -= 1; kolhozniki_player -= 1; spoiler += 2
+
+= ПСИХИ ТОЖЕ ЛЮДИ
+
+С момента отмены принудительного психиатрического лечения вопросы психического здоровья заботят все население округа. Несмотря на Вашу попытку провести митинг под самым благим предлогом, в Вашей серьезности, да и в Вашем психическом здоровье некоторые стали сомневаться. Зато голоса участников митинга вам обеспечены.
+
+
+@marchon
+title: Митинг персонально против конкурента на выборах
+tag: meeting_theme
+view-if: player_votes < enemy_votes
+frequency: 85
+on-arrival: rabochie_enemy -= 1; inteligentsiya_enemy -= 2; inteligentsiya_againstall += 1; undecided -= 1; spoiler -= 1
+
+= ГОЛОСУЙ ИЛИ ПРОИГРАЕШЬ
+
+На митинге Вы и ваши сторонники несли перечеркнутые портреты вашего конкурента, лозунги "Не допустим победы [+ enemyname : enemyname +] !". 
+
+Много народу собрать не удалось, но Вы все же заявили о себе как реальной альтернативе. 
+

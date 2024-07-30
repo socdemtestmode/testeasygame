@@ -15,7 +15,7 @@ max-choices: 4
 
 - @economic
 - @law_negative
-- @return
+- @easy_discard
 
 @economic
 title: К экономической части программы

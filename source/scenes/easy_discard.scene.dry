@@ -1,4 +1,4 @@
-title: Return card to hand.
+title: Вернуться назад
 go-to: root
 on-arrival: {!
 Q.week_actions -= 1;
@@ -15,3 +15,4 @@ if (this.state.visits[card.id]) {
     this.state.visits[card.id] -= 1;
 }
 !}
+frequency: 111111111111111111111111111111111111111
