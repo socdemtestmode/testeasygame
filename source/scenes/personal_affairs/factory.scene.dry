@@ -1,7 +1,6 @@
 title: Агитрейд на завод
 new-page: true
 is-card: true
-card-image: https://i.imgur.com/FnyEAO4.png
 max-visits: 2
 tags: pers_affairs
 on-arrival: factory_timer += 3; week_actions += 1
@@ -30,6 +29,7 @@ on-arrival: resources -= 10; rabochie_player += 4; nomenklatura_player -= 0.5; s
 
 @speechfactory
 title: Выступить с речью перед договорниками
+- #factory_raid
 go-to: speech.factoryspeech
 
 @meetwithdirector
@@ -48,7 +48,7 @@ title: Устроить забастовку на заводе
 tags: factory_raid
 view-if: rabochie_player > rabochie_enemy
 on-arrival: rabochie_player += 4; nomenklatura_player -= 8
-frequency: 120
+frequency: 105
 
 = БАСТА
 
