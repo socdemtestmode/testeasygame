@@ -14,7 +14,7 @@ if (Q.resources == 0) {
     this.achieve('bankrot');
 }
 // Нет штрафов
-if (Q.money == 5000) {
+if (Q.money == 5) {
     this.achieve('netshtafov');
 }
 !}
@@ -58,6 +58,9 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 [? if game_achievement_bankrot : **0 ресов** - банкрот ?]
 
 [? if game_achievement_netshtafov : **Нет штрафов** - пройти игру и не заплатить ни одного штрафа ?]
+
+[? if game_achievement_buyafactory : **Фабрикант** - купить завод ?]
+
 = Completed Achievements Overall
 
 
@@ -67,13 +70,17 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if achievement_netshtafov : **Нет штрафов** - пройти игру и не заплатить ни одного штрафа ?]
 
+[? if achievement_buyafactory : **Фабрикант** - купить завод ?]
+
 = Incomplete Achievements
 
 [? if not achievement_fiftyhundredresources : **500 ресов** - попятьсот. ?]
 
-[? if not achievement__bankrot : **0 ресов** - банкрот ?]
+[? if not achievement_bankrot : **0 ресов** - банкрот ?]
 
 [? if not achievement_netshtafov : **Нет штрафов** - пройти игру и не заплатить ни одного штрафа ?]
+
+[? if not achievement_buyafactory : **Фабрикант** - купить завод ?]
 
 @end_game
 game-over: true

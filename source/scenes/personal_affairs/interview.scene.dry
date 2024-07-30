@@ -3,7 +3,7 @@ new-page: true
 is-card: true
 max-visits: 2
 tags: pers_affairs
-on-arrival: interview_timer += 2
+on-arrival: interview_timer += 2; week_actions += 1
 view-if: week > 3
 max-choices: 4
 
