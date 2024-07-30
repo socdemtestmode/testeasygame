@@ -1,6 +1,7 @@
 title: Агитрейд на завод
 new-page: true
 is-card: true
+card-image: https://i.imgur.com/FnyEAO4.png
 max-visits: 2
 tags: pers_affairs
 on-arrival: factory_timer += 3; week_actions += 1
