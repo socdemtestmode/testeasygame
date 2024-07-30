@@ -86,10 +86,12 @@ Q.total_win = 0;
 Q.program_selected = 0;
 Q.economic_program_seen = 0;
 
-Q.timers = ['speech', 'program'];
+Q.timers = ['speech', 'program', 'interview'];
 
 // personal affairs timers
 Q.speech_timer = 0;
+Q.interview_timer = 0;
+Q.program_timer = 0;
 
 // affairs events
 Q.pro_shtab = 0;
