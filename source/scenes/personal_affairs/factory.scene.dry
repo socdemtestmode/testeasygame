@@ -29,7 +29,7 @@ on-arrival: resources -= 10; rabochie_player += 4; nomenklatura_player -= 0.5; s
 
 @speechfactory
 title: Выступить с речью перед договорниками
-- #factory_raid
+tags: factory_raid
 go-to: speech.factoryspeech
 
 @meetwithdirector
