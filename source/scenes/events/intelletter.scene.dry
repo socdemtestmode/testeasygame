@@ -1,0 +1,13 @@
+title: Письмо 200-х
+new-page: true 
+subtitle: Письмо лучших умов
+tags: event
+view-if: inteligentsiya_player_normalized < inteligentsiya_enemy
+on-arrival: inteligentsiya_player -= 5; kolhozniki_player -= 0.5; undecided *= 0.9; inteligentsiya_enemy += 5; rabochie_player -= 0.5; rabochie_enemy += 0.5; inteligentsiya_againstall *= 0.8; nomenklatura_player += 0.5
+max-visits: 1
+frequency: 200
+
+= ПИСЬМО ПОЛНОЕ ГНЕВА
+
+В крупнейшей окружной газете и Интернете опубликовано открытое письмо профессоров известнейших поэтов, писателей, маркетологов, профессоров рыночного ПТУ против лично Вас. В нем сказано, что вы злейшей враг культуры, не уважаете наши традиции и вообще буквально враг рынка. Совесть нации пишет, что лучше проголосовать даже такой кандидат как [+ enemyname : enemyname +], лучше чем Вы. Население в целом едва отреагировало, а кое-кто даже посчитал, что Вы не такой уж плохой человек, если о Вас неудачники такого мнения.
+
