@@ -15,7 +15,7 @@ max-choices: 4
 @marchfreetrade
 title: Митинг "За свободу торговли!"
 tags: meeting_theme
-on-arrival: inteligentsiya_player += 1
+on-arrival: inteligentsiya_player += 1; kolhozniki_player += 0.1
 
 = СВОБОДНА ТОРГОВЛЯ - СВОБОДЕН ЧЕЛОВЕК
 
@@ -35,13 +35,12 @@ title: Митинг в честь месячника психического з
 unavailable-subtitle: Ваш штаб саботирует митинг с такой темой
 tags: meeting_theme
 choose-if: pro_shtab = 0 and halfpro_shtab = 0
-frequency: 30
+frequency: 35
 on-arrival: inteligentsiya_player += 1; nomenklatura_player -= 1; rabochie_player -= 1; kolhozniki_player -= 1; spoiler += 2
 
 = ПСИХИ ТОЖЕ ЛЮДИ
 
 С момента отмены принудительного психиатрического лечения вопросы психического здоровья заботят все население округа. Несмотря на Вашу попытку провести митинг под самым благим предлогом, в Вашей серьезности, да и в Вашем психическом здоровье некоторые стали сомневаться. Зато голоса участников митинга вам обеспечены.
-
 
 @marchon
 title: Митинг персонально против конкурента на выборах
@@ -60,8 +59,29 @@ on-arrival: rabochie_enemy -= 1; inteligentsiya_enemy -= 2; inteligentsiya_again
 title: Митинг против частно-партийного режима
 tags: meeting_theme
 frequency: 75
-on-arrival: rabochie_player -= 2; kolhozniki_player -= 4; inteligentsiya_player += 2; rabochie_againstall -= 1; nomenklatura_againstall = 0; nomenklatura_player -= 20; undecided *= 0.6; nomenklatura -= 1; rabochie += 1; spoiler -= 3; crime += 1
+on-arrival: rabochie_player -= 3; kolhozniki_player -= 6; inteligentsiya_player += 2; rabochie_againstall -= 1; nomenklatura_againstall = 0; nomenklatura_player -= 22; undecided *= 0.6; nomenklatura -= 1; rabochie += 1; spoiler -= 3; crime += 1
 
 = ДОЛОЙ ВЛАСТЬ ЧАСТНЫХ ПАРТОКРАТОВ
 
 Ваш митинг скоро разогнали из водомётов представители особого отряда частной милиции. Вас обвинили в попытке частного переворота. Конечно, это полная чепуха, но от ответственности уйти не удастся. Ваш крошечный митинг, первый разогнаненный за десятилетия, вызвал на бирже настоящую панику, акции списочников падают.
+
+@marchsolidaritywithliberland
+title: Митинг с платным входом
+tags: meeting_theme
+frequency: 80
+on-arrival: resources += 15; rabochie_player -= 2; inteligentsiya_player -= 4; kolhozniki_player -= 1
+
+= ПЛАТИ ИЛИ ПРОИГРАЕШЬ
+
+Блестящая финансовая афера удалась. Наученные тем, что рынок на все устанавливает справедливую цену, жители толпами повалили за билетами на митинг, полагая что за такую цену зрелище будет впечатляющее. Однако все, что они смогли там увидеть - удивленные лица друг друга.
+
+@marchkommunarov
+title: Марш коммунаров
+tags: meeting_theme
+frequency: 125
+view-if: kolhozniki_player > kolhozniki_enemy
+on-arrival: kolhozniki_player *= 1.1; rabochie_player -= 1.5; inteligentsiya_player -= 5; nomenklatura_player -= 4
+
+= СЛАВА ТРУДЯЩИМСЯ ЗЕМЛЕВЛАДЕЛЬЦАМ
+
+Пользуясь тем, что Вы очень популярны среди коммунаров - Вам удалось собрать их в столице и пройтись маршем по центральным улицам. Столичные жители от гостей из деревень перекрывающих улицы были не в восторге, зато среди коммунаров вы свои позиции упрочили. 

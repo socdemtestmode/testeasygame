@@ -67,10 +67,11 @@ if (choices && choices[0].title != "Continue...") {
 if (typeof window !== "undefined" && window.generateBar) {
 }
 
-// пересчет определевшихся
+// пересчет определевшихся и универсальный рандом
+Q.unirandom = (Math.floor(Math.random() * 2498));
 Q.total_population = Q.rabochie + Q.inteligentsiya + Q.kolhozniki + Q.nomenklatura + Q.undecided;
 Q.undecided_votes = Math.round((Q.undecided / Q.total_population) * 100 * 100) / 100;
-Q.againstall_votes_library = Math.round((Q.againstall_votes - Q.undecided_votes) * 100) / 100
+Q.againstall_votes_library = Math.round((Q.againstall_votes - Q.undecided_votes) * 100) / 100;
 !}
 go-to: election_algorithm
 set-jump: post_event_menu

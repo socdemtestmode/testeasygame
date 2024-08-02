@@ -12,6 +12,71 @@ max-choices: 4
 - #interview
 - @easy_discard
 
+@spoiler_interview_max
+title: У журналиста один вопрос: а правда ли [+ enemyname : enemyname +] нанял Вас чтобы Вы создавали ему видимость конкуренции?
+frequency: 3500
+priority: 35
+view-if: spoiler > 9
+tags: interview
+max-visits: 1
+
+- @spoiler_interview_max2
+- @spoiler_interview_max_proshtab_help
+
+@spoiler_interview_max2
+title: Отрицать очевидное уже глупо
+subtitle: Все уже всё знают
+on-arrival: spoiler *= 1.1; rabochie_againstall *= 1.3; kolhozniki_againstall *= 1.3; inteligentsiya_againstall *= 1.45; nomenklatura_againstall += 1; nomenklatura_againstall *= 1.2;
+
+= ОБА ХУЖЕ
+
+Никто не сомневается, что [+ enemyname : enemyname +] нанял Вас чтобы Вы составили ему конкуренцию. По Вашему ответу журналисту видно, что вы не в силах этого отрицать.
+
+@spoiler_interview_max_proshtab_help
+title: Попросить помощь штаба в избирательной компании для оправданий
+subtitle: Они найдут лучшие слова.
+unavailable-subtitle: Штаб не в силах нам помочь
+choose-if: pro_shtab = 1
+on-arrival: spoiler *= 0.95; rabochie_againstall *= 1.1; kolhozniki_againstall *= 1.1; inteligentsiya_againstall *= 1.05; kolhozniki_player += 0.1; inteligentsiya_player += 0.5; rabochie_player += 0.1
+
+Профессионалы из штаба, как могли, помогли смягчить произведенное Вами впечатление. Но, честно сказать, они сами уже не верят в то, что Вы независимый кандидат.
+
+@spoiler_interview_low
+title: Высказаться о серьезности своих намерений
+subtitle: Вас подозревают о том, что Вы фиктивный конкурент
+frequency: 350
+view-if: spoiler > 5
+tags: interview
+max-visits: 1
+
+- @spoiler_osk
+- @spoiler_yes
+- @spoiler_no
+
+@spoiler_osk
+title: [+ enemyname : enemyname +] - полный дурак и враг рынка. Кто вообще мог подумать что я на него работаю?
+on-arrival: spoiler -= 5; crime += 1; rabochie_player += 1; nomenklatura_player -= 10; inteligentsiya_player += 3; kolhozniki_player -= 1
+
+= ОСКОРБЛЕНИЕ ЭТО СЛОВЕСНАЯ АГРЕССИЯ
+
+Хотя сам Ваш соперник сделал вид что не оскорбился, нашлись доброжелатели, которые подали в суд от его имени. Привлеченный частный эксперт без сомнений указал, что Вы перешли все границы неагрессии. Вы будете подвергнуты наказанию. Одно хорошо - в Вашей ненаигранной неприязни к противнику теперь никто не сомневается. 
+
+@spoiler_yes
+title: Да, [+ enemyname : enemyname +] попросил выдвинуться.
+on-arrival: spoiler += 2; rabochie_player -= 2; inteligentsiya_player -= 6; kolhozniki_player -= 1; rabochie_againstall += 3; inteligentsiya_againstall += 5; kolhozniki_againstall += 2; nomenklatura_againstall += 1;
+
+= ТОЧНО ПОДСАДНОЙ
+
+Ваша попытка пошутить была понята совсем буквально и люди в своих подозрениях лишь укрепились. 
+
+@spoiler_no
+title: Нет, я действительно независимый кандидат.
+on-arrival: spoiler -= 1; rabochie_player += 3; kolhozniki_player += 2; inteligentsiya_player += 2;
+
+= СОМНЕНИЯ ОСТАЮТСЯ
+
+Поверить в то, что при Вашем ведении избирательной компании и загадочном появлении как раз под выборы Вы серьезно **независимый** кандидат - крайне сложно. Однако массовый избиратель вам, немножечко, поверил.
+
 @anime
 title: Высказаться о японских мультиках
 tags: interview
@@ -77,3 +142,4 @@ title: Тема мигрантов не заслуживает внимания
 tags: interview_migrants
 
 С Вами никто не может спорить. Однако кроме Вас ее никто особо то и не поднимал, поэтому Вы остались без внимания аудитории. Но Вы ведь этого и хотели, не так ли?
+

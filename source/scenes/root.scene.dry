@@ -99,7 +99,8 @@ Q.factory_timer = 0;
 Q.pro_shtab = 0;
 Q.halfpro_shtab = 0;
 
-// Имя противника задается
+// Имя противника задается. Унирандом для прочих разовых имен используется и случайных эвентов
+Q.unirandom = 0;
 Q.enemyname = (Math.floor(Math.random() * 2498));
 !}
 new-page: true
