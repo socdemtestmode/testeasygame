@@ -1,0 +1,10 @@
+title: Новый лидер
+new-page: true 
+subtitle: Опросы общественного мнения выявили нового лидера.
+tags: event
+view-if: week > 3 and (player_votes > enemy_votes)
+frequency: 4500
+on-arrival: rabochie_enemy *= 1.1 ; kolhozniki_enemy *= 1.1; nomenklatura_enemy *= 1.05; inteligentsiya_enemy *= 1.1; undecided *= 0.8;
+max-visits: 1
+
+Вы лидируете! [+ enemyname : enemyname +] сильно не обрадован. Если до этого он работал в пол силы, то теперь от страха проиграть выложился по-полной. К сожалению, надолго его не хватило, и, как только первый шок прошел, [+ enemyname : enemyname +] быстро вернулся к прежнему ведению избирательной кампании.

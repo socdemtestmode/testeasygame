@@ -6,7 +6,7 @@ on-arrival: {!
 this.achieve('game_completed');
 
 // Халявщик
-if (Q.resources == 500) {
+if (Q.resources == 200) {
     this.achieve('fiftyhundredresources');
 }
 // Bankrot
@@ -53,7 +53,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 = Completed Achievements in this Playthrough
 
 
-[? if game_achievement_fiftyhundredresources : **500 ресов** - попятьсот. ?]
+[? if game_achievement_fiftyhundredresources : **200 ресов** - Не потратить ничего и проиграть. ?]
 
 [? if game_achievement_bankrot : **0 ресов** - банкрот ?]
 
@@ -64,7 +64,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 = Completed Achievements Overall
 
 
-[? if achievement_fiftyhundredresources : **500 ресов** - попятьсот. ?]
+[? if achievement_fiftyhundredresources : **200 ресов** - Не потратить ничего и проиграть. ?]
 
 [? if achievement_bankrot : **0 ресов** - банкрот ?]
 
@@ -74,7 +74,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 = Incomplete Achievements
 
-[? if not achievement_fiftyhundredresources : **500 ресов** - попятьсот. ?]
+[? if not achievement_fiftyhundredresources : **200 ресов** - Не потратить ничего и проиграть. ?]
 
 [? if not achievement_bankrot : **0 ресов** - банкрот ?]
 

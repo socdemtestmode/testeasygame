@@ -48,7 +48,7 @@ Q.rabochie = 25; // industry and trade
 Q.inteligentsiya = 15; // 
 Q.kolhozniki = 20; // 
 Q.nomenklatura = 10;
-Q.undecided = 30;
+Q.undecided = 40;
 Q.total_population = Q.rabochie + Q.inteligentsiya + Q.kolhozniki + Q.nomenklatura + Q.undecided;
 Q.undecided_votes = (Q.undecided / Q.total_population) * 100;
 
@@ -80,13 +80,15 @@ Q.undecided_againstall = 100;
 
 // Main events: what has occurred?
 Q.event_seen = 0;
+Q.listovki_seen = 0;
 Q.total_win = 0;
 
 // Program events seen and selected
 Q.program_selected = 0;
 Q.economic_program_seen = 0;
+Q.program_published = 0;
 
-Q.timers = ['speech', 'program', 'interview', 'meeting', 'factory'];
+Q.timers = ['speech', 'program', 'interview', 'meeting', 'factory', 'listovki'];
 
 // personal affairs timers
 Q.speech_timer = 0;
@@ -94,6 +96,7 @@ Q.interview_timer = 0;
 Q.program_timer = 0;
 Q.meeting_timer = 0;
 Q.factory_timer = 0;
+Q.listovki_timer = 0;
 
 // affairs events
 Q.pro_shtab = 0;
@@ -116,7 +119,7 @@ For more information see the "Library" page on the top left. If this is your fir
 - @start_game: Начать
 
 @start_game
-on-arrival: resources = 500
+on-arrival: resources = 200
 go-to: main
 
 = Типо стартанули
