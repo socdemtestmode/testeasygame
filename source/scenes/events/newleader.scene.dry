@@ -6,8 +6,7 @@ view-if: week > 3 and (player_votes > enemy_votes)
 frequency: 4500
 on-arrival: rabochie_enemy *= 1.05 ; kolhozniki_enemy *= 1.05; nomenklatura_enemy *= 1.05; inteligentsiya_enemy *= 1.1; undecided *= 0.9;
 max-visits: 1
-on-departure: 
-{!
+on-departure: {!
 Q.undecided_votes = Math.round((Q.undecided / Q.total_population) * 100 * 100) / 100;
 Q.againstall_votes_library = Math.round((Q.againstall_votes - Q.undecided_votes) * 100) / 100;
 !}
