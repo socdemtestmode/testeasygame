@@ -70,7 +70,7 @@ Q.kolhozniki_player = 20;
 Q.kolhozniki_enemy = 40;
 Q.kolhozniki_againstall = 1;
 
-Q.nomenklatura_player = 0;
+Q.nomenklatura_player = 5;
 Q.nomenklatura_enemy = 75;
 Q.nomenklatura_againstall = 0;
 

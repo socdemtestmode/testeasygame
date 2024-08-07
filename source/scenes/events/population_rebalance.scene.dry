@@ -1,7 +1,7 @@
 title: Население
 subtitle: Часткомстат сообщает о значительном изменении в численности населения.
 tags: event
-frequency: 100
+frequency: 40
 max-choices: 1
 max-visits: 1
 go-to: poprebalance1
@@ -49,9 +49,9 @@ Q.new_nomenklatura_number = Math.round((5 / (Q.total_population - Q.undecided)) 
 
 Прошло плановое обновление акционерного реестра списочного состава частно-партийных кадров. В связи с образованием новой частной временной комиссии по делам укрепления выборной власти и увеличения штатов ранее существующих компаний, численность списочников заметно возрасла. Теперь их доля в населении на **[+ new_nomenklatura_number +]%** больше, чем раньше.
 
-[? if nomenklatura_player_normalized > nomenklatura_enemy_normalized : Это нам не выгодно, посколько списочники поддерживают Вас больше чем соперника. ?]
+[? if nomenklatura_player_normalized > nomenklatura_enemy_normalized : Это Вам не выгодно, посколько списочники поддерживают Вас больше чем соперника. ?]
 
-[? if nomenklatura_player_normalized < nomenklatura_enemy_normalized : Это нам выгодно, посколько списочники поддерживают соперника куда больше, чем Вас. ?]
+[? if nomenklatura_player_normalized < nomenklatura_enemy_normalized : Это Вам выгодно, посколько списочники поддерживают соперника куда больше, чем Вас. ?]
 
 @parahod
 title: Новая номенклатура

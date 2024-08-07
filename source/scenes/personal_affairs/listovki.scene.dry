@@ -88,7 +88,7 @@ on-arrival: inteligentsiya_player -= 1; kolhozniki_player += 5; nomenklatura_pla
 = ПОКУПАЙТЕ ТОВАРЫ ТОЛЬКО НА КОММУНАРСКИХ РЫНКАХ, ГОЛОСУЙТЕ ТОЛЬКО ПРОТИВ [+ enemyname : enemyname +]
 
 @listovki_kucha
-title: Издать листовку с изображением кучи эксрементов
+title: Издать листовку с изображением кучи экскрементов
 subtitle: - 10 y. e.
 unavailable-subtitle: Штаб не разрешает такую трату денег
 tags: listovki_theme

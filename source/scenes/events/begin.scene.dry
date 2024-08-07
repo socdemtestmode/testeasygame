@@ -2,7 +2,7 @@ title: Начало большого пути
 new-page: true 
 subtitle: Соперник делает первые шаги
 tags: event
-on-arrival: rabochie_player += 5; inteligentsiya_player += 10; kolhozniki_player += 4; undecided -= 1
+on-arrival: rabochie_player += 10; inteligentsiya_player += 15; kolhozniki_player += 4; undecided -= 4; rabochie_enemy += 5; inteligentsiya_enemy += 5; kolhozniki_enemy += 2; rabochie_againstall *= 0.9
 max-visits: 1
 priority: 100
 
