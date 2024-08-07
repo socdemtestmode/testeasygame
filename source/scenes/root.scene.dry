@@ -121,10 +121,12 @@ For more information see the "Library" page on the top left. If this is your fir
 
 @start_info
 
+= ИНФОРМАЦИЯ
+
 - @setname
 - @start_game
 
-@set-name
+@setname
 title: Ввести свое имя (необязательно)
 
 = Ввести свое имя (необязательно)
