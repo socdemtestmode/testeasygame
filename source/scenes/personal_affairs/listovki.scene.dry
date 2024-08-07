@@ -75,7 +75,7 @@ title: Издать листовку с карикатурой против ле
 subtitle: - 10 y. e.
 tags: listovki_theme
 view-if: resources > 9 and nomenklatura_player > nomenklatura_enemy
-on-arrival: resources -= 10; rabochie_player *= 0.98, rabochie_player -= 1; nomenklatura_player += 5; inteligentsiya_player += 1; kolhozniki_player += 0.5
+on-arrival: resources -= 10; rabochie_player *= 0.98; rabochie_player -= 1; nomenklatura_player += 5; inteligentsiya_player += 1; kolhozniki_player += 0.5
 
 [? if unirandom > 1250 : Вы изобразили карикатуру на договорника, который вместо работы только бегает по всем судам, что только предлагают судебные услуги для рынка, лишь бы оспорить свой договор. Над карикатурой большой заголовок **"А работать когда?"**. Не очень смешно, но договорникам, само собой, хватило чтобы оскорбиться. Остальным такая сатира понравилась ?]
 [? if unirandom < 1251 : Вы изобразили карикатуру на договорника, который не хочет выходить из горящего дома, потому что по договору у него единственный за 24 часа час отдыха. Не очень смешно, но все, кроме договорников - оценили. ?]
