@@ -3,7 +3,7 @@ new-page: true
 is-card: true
 tags: pers_affairs
 on-arrival: week_actions += 1; program_timer = 2
-view-if: week < 16
+view-if: week < 16 and program_published = 0 and program_timer = 0
 max-visits: 4
 max-choices: 4
 go-to: program1 if program_selected < 2; program2 if program_selected > 1
