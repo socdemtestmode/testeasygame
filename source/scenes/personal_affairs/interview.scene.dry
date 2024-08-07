@@ -95,8 +95,10 @@ tags: interview_anime
 
 @animerolik
 title: Пообещать снять агитационный ролик в стилe этих мультиков
-on-arrival: resources -= 50; inteligentsiya_player += 2; rabochie_player -= 2; nomenklatura_player -= 4; kolhozniki_player -= 1
-subtitle: Это будет стоить - 50 у.е.
+unavailable-subtitle: Средств не хватает.
+on-arrival: resources -= 25; inteligentsiya_player += 2; rabochie_player -= 2; nomenklatura_player -= 4; kolhozniki_player -= 1
+choose-if: resources > 24
+subtitle: Это будет стоить - 25 у.е.
 tags: interview_anime
 
 

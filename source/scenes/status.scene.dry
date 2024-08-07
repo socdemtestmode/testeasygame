@@ -16,6 +16,7 @@ is-special: true
 
 [+ enemyname : enemyname +]: [+ enemy_votes +]%
 
+[+ spoiler +]
 
 Выборы будут на неделе: [+ next_election_week +]
 
@@ -44,6 +45,8 @@ is-special: true
 2
 
 @polls
+
+[+ spoiler +]
 
 = Projected election results
 (if the election were to be held now):
