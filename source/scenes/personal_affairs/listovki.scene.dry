@@ -16,13 +16,13 @@ max-choices: 4
 title: Напечатать листовки на продажу
 subtitle: Это даст нам немного денег
 tags: listovki_theme
-on-arrival: resources += 5; kolhozniki_player += 1; rabochie_player += 1; kolhozniki_player += 4 if player_votes > enemy_votes; kolhozniki_player -= 3 if ((player_votes * 1.2) < enemy_votes); rabochie_player -= 1 if ((player_votes * 1.2) < enemy_votes); resources -= 2 if ((player_votes * 1.2) < enemy_votes); inteligentsiya_player -= 1 if ((player_votes * 1.2) < enemy_votes);
+on-arrival: resources += 5; kolhozniki_player += 1; rabochie_player += 1; kolhozniki_player += 4 if player_votes > enemy_votes; kolhozniki_player -= 3 if player_votes < enemy_votes; rabochie_player -= 1 if player_votes < enemy_votes; resources -= 2 if player_votes < enemy_votes); inteligentsiya_player -= 1 if player_votes < enemy_votes;
 
 = ПОКУПАЙ ИЛИ ПРОИГРАЕШЬ
 
 Мы отпечатали небольшим тиражом и установили большую цену, надеясь и, надеялись, что деньги окажутся потрачены впустую. 
 [? if player_votes > enemy_votes : Однако, поскольку мы побеждаем, на нашу продукцию оказался небывалый спрос. На коммунарских рынках ее перепродает каждый уважающий себя торговец. Цена уже взлетела до небес, все рассчитывают, что они подорожают еще больше после вашей неизбежной победы. ?]
-[? if player_votes * 1.2 < enemy_votes : Наши надежды, скорее всего, оправдались. Наша продукция не пользовалась особым спросом, а немногие купившие скоро пожалели ?]
+[? if player_votes < enemy_votes : Наши надежды, скорее всего, оправдались. Наша продукция не пользовалась особым спросом, а немногие купившие скоро пожалели ?]
 
 @listovki_workers
 title: Раздавать листовки у проходной завода
