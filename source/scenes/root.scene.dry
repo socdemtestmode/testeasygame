@@ -117,6 +117,61 @@ new-page: true
 For more information see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
 
 - @start_game: Начать
+- @start_info: Узнать больше
+
+@start_info
+
+- @setname
+- @start_game
+
+@set-name
+title: Ввести свое имя (необязательно)
+
+= Ввести свое имя (необязательно)
+
+{!
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scaяle=1.0">
+    <title>Input Example</title>
+    <style>
+        #inputContainer {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        #inputField {
+            flex-grow: 1;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="inputContainer">
+        <input type="text" id="inputField" placeholder="Введите свое имя и нажмите Enter или кнопку "Готово">
+        <button id="submitButton">Готово</button>
+    </div>
+
+    <script>
+        let Q = {};
+
+        function processInput() {
+            const inputField = document.getElementById('inputField');
+            dendryUI.dendryEngine.state.qualities.name = inputField.value;
+            console.log('Q.name:', dendryUI.dendryEngine.state.qualities.name);
+            inputField.value = '';
+            document.getElementById('inputContainer').style.display = 'none';
+        }
+
+        document.getElementById('inputField').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                processInput();
+            }
+        });
+
+        document.getElementById('submitButton').addEventListener('click', processInput);
+    </script>
+!}
+
+- @start_info: Назад
 
 @start_game
 on-arrival: resources = 200

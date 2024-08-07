@@ -58,10 +58,8 @@ on-arrival: resources -= 10; crime += 1; rabochie_player -= 1; kolhozniki_player
 @listovki_blanklists
 title: Раздавать пустые листы
 subtitle: - 5 y. e.
-unavailable-subtitle: Штаб не разрешает такую трату денег
 tags: listovki_theme
 view-if: resources > 4
-choose-if: pro_shtab = 0
 frequency: 100
 on-arrival: resources -= 5; nomenklatura_player -= 4; spoiler += 1; rabochie_player -= 1; inteligentsiya_player += 2
 max-visits: 1
@@ -77,11 +75,28 @@ tags: listovki_theme
 view-if: resources > 9 and nomenklatura_player > nomenklatura_enemy
 on-arrival: resources -= 10; rabochie_player *= 0.98; rabochie_player -= 2; nomenklatura_player += 5; inteligentsiya_player += 1; kolhozniki_player += 0.5
 
-[? if unirandom > 1250 : Вы изобразили карикатуру на договорника, который вместо работы только бегает по всем судам, что только предлагают судебные услуги для рынка, лишь бы оспорить свой договор. Над карикатурой большой заголовок **"А работать когда?"**. Не очень смешно, но договорникам, само собой, хватило чтобы оскорбиться. Остальным такая сатира понравилась ?]
+[? if unirandom > 1250 : Вы изобразили карикатуру на договорника, который вместо работы только бегает по всем судам, что только предлагают судебные услуги для рынка, лишь бы оспорить свой договор. Над карикатурой большой заголовок **"А работать когда?"**. Не очень смешно, но договорникам, само собой, хватило чтобы оскорбиться. Остальным такая сатира понравилась ?] 
 [? if unirandom < 1251 : Вы изобразили карикатуру на договорника, который не хочет выходить из горящего дома, потому что по договору у него единственный за 24 часа час отдыха. Не очень смешно, но все, кроме договорников - оценили. ?]
 
 @listovki_kommunars
-title: Издать листовку с карикатурой против ленивых договорников
+title: Издать листовку в поддержку коммунарской торговли
 subtitle: - 10 y. e.
 tags: listovki_theme
 view-if: resources > 9
+on-arrival: inteligentsiya_player -= 1; kolhozniki_player += 5; nomenklatura_player -= 3; kolhozniki_againstall += 0.1
+
+= ПОКУПАЙТЕ ТОВАРЫ ТОЛЬКО НА КОММУНАРСКИХ РЫНКАХ, ГОЛОСУЙТЕ ТОЛЬКО ПРОТИВ [+ enemyname : enemyname +]
+
+@listovki_kommunars
+title: Издать листовку с изображением кучи эксрементов
+subtitle: - 10 y. e.
+unavailable-subtitle: Штаб не разрешает такую трату денег
+tags: listovki_theme
+view-if: resources > 9
+choose-if: pro_shtab = 0
+on-arrival: spoiler += 4; inteligentsiya_player += 4; rabochie_player -= 3; kolhozniki_player -= 4; nomenklatura_player -= 5; rabochie_againstall += 0.1; 
+frequency: 80
+
+= БУМАЖКИ С КОРИЧНЕВЫМ ПЯТНОМ
+
+Раздать бумажки с таким изображением было непросто. Лишь наиболее творческие представители прослоечников догадались, что Вы тем самым завуалированно протестуете против режима. 
