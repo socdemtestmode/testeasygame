@@ -44,7 +44,7 @@ on-arrival: spoiler *= 0.95; rabochie_againstall *= 1.1; kolhozniki_againstall *
 @spoiler_interview_low
 title: Высказаться о серьезности своих намерений
 subtitle: Вас подозревают о том, что Вы фиктивный конкурент
-frequency: 350
+frequency: 450
 view-if: spoiler > 5
 tags: interview
 max-visits: 1

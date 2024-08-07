@@ -36,7 +36,7 @@ unavailable-subtitle: Ваш штаб саботирует митинг с та�
 tags: meeting_theme
 choose-if: pro_shtab = 0 and halfpro_shtab = 0
 frequency: 35
-on-arrival: inteligentsiya_player += 1; nomenklatura_player -= 1; rabochie_player -= 1; kolhozniki_player -= 1; spoiler += 2
+on-arrival: inteligentsiya_player += 1; nomenklatura_player -= 1; rabochie_player -= 1; kolhozniki_player -= 1; spoiler += 3
 
 = ПСИХИ ТОЖЕ ЛЮДИ
 

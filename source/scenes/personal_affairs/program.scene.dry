@@ -97,6 +97,7 @@ max-visits: 2
 title: Запретим продавать детей без их согласия
 tags: law_negative_program
 on-arrival: program_selected += 1; kolhozniki_player -= 3; nomenklatura_player -= 1; inteligentsiya_player -= 1; rabochie_player -= 2  
+max-visits: 1
 
 = ДЕТИ ТОЖЕ ЛЮДИ
 
@@ -106,6 +107,7 @@ on-arrival: program_selected += 1; kolhozniki_player -= 3; nomenklatura_player -
 title: Запретим частную дискриминацию
 tags: law_negative_program
 on-arrival: program_selected += 1; kolhozniki_player -= 3; nomenklatura_player -= 6; inteligentsiya_player += 2; rabochie_player += 3  
+max-visits: 1
 
 = ОБСЛУЖИВАЙ ВСЕХ
 
@@ -116,6 +118,7 @@ on-arrival: program_selected += 1; kolhozniki_player -= 3; nomenklatura_player -
 title: Запретим 24-часовые договоры
 tags: law_negative_program
 on-arrival: program_selected += 1; nomenklatura_player -= 10; kolhozniki_player -= 1; rabochie_player += 4
+max-visits: 1
 
 = СЛИШКОМ КОРОТКИХ ДОГОВОРОВ НЕ БУДЕТ
 
