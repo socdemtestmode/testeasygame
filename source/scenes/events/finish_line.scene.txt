@@ -1,0 +1,14 @@
+title: Финиш
+new-page: true 
+subtitle: Выборы уже очень близко
+tags: event
+view-if: week > 12
+frequency: 1500
+on-arrival: spoiler += 3 if program_selected = 0; spoiler -= 1 if program_selected > 1; spoiler -= 1 if program_published = 1; spoiler -= 1 if listovki_seen = 1; spoiler += 1 if listovki_seen = 0; spoiler += 2; undecided *= 0.2; rabochie_player -= 2 if program_selected = 0; kolhozniki_player -= 1 if program_selected = 0; inteligentsiya_player -= 4 if program_selected = 0; nomenklatura_againstall += 1 if program_selected = 0; spoiler -= 2 if player_votes > enemy_votes
+
+Недель до выборов осталось всего: **[+ next_election_week - week +].** 
+Избиратели определяются со своим выбором. 
+
+[? if enemy_votes < player_votes : Вы лидируете. Ваша победа уже мало для кого сомнительна. ?]
+[? if listovki_seen = 0 : Вы даже не нашли времени хотя бы раз раздать листовки. Избиратели учтут, что Вы даже не пытались победить ?]
+[? if program_selected = 0 : Вы даже не начинали работать над программой. Избиратели это не могут игнорировать. ?]

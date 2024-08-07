@@ -80,7 +80,7 @@ title: Марш коммунаров
 tags: meeting_theme
 frequency: 125
 view-if: kolhozniki_player > kolhozniki_enemy
-on-arrival: kolhozniki_player *= 1.1; rabochie_player -= 1.5; inteligentsiya_player -= 5; nomenklatura_player -= 4
+on-arrival: kolhozniki_player *= 1.05; kolhozniki_player += 1; rabochie_player -= 1.5; inteligentsiya_player -= 5; nomenklatura_player -= 4
 
 = СЛАВА ТРУДЯЩИМСЯ ЗЕМЛЕВЛАДЕЛЬЦАМ
 
