@@ -1,5 +1,5 @@
 title: Вернуться назад
-go-to: root
+go-to: main
 on-arrival: {!
 Q.week_actions -= 1;
 // return card to hand
