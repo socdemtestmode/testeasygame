@@ -124,7 +124,7 @@ For more information see the "Library" page on the top left. If this is your fir
 = ИНФОРМАЦИЯ
 
 - @setname
-- @start_game
+- @start_game: Начать
 
 @setname
 title: Ввести свое имя (необязательно)
@@ -133,7 +133,7 @@ title: Ввести свое имя (необязательно)
 
 {!
    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scaяle=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Input Example</title>
     <style>
         #inputContainer {
