@@ -16,7 +16,7 @@
     // Add your custom code here.
   };
 
-  var TITLE = "Social Democracy: An Alternate History" + '_' + "Autumn Chen";
+  var TITLE = "Testeasygame" + '_' + "Qq";
 
   window.showStats = function() {
     if (window.dendryUI.dendryEngine.state.sceneId.startsWith('library')) {
@@ -79,12 +79,12 @@
   };
 
   window.disableAudio = function() {
-      window.dendryUI.toggle_audio(false);
+      window.dendryUI.toggle_audio(true);
       window.dendryUI.saveSettings();
   };
 
   window.enableAudio = function() {
-      window.dendryUI.toggle_audio(true);
+      window.dendryUI.toggle_audio(false);
       window.dendryUI.saveSettings();
   };
 

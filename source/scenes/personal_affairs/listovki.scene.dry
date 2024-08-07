@@ -55,7 +55,7 @@ on-arrival: resources -= 10; crime += 1; rabochie_player -= 1; kolhozniki_player
 
 Весь тираж был быстро конфискован и до читателя почти не дошел. Вас будут судить за преступления против рыночной свободы. 
 
-@listovki_state
+@listovki_blanklists
 title: Раздавать пустые листы
 subtitle: - 5 y. e.
 unavailable-subtitle: Штаб не разрешает такую трату денег
