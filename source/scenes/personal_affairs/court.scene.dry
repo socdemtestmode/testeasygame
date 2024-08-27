@@ -1,0 +1,42 @@
+title: Подать иск в частный суд
+new-page: true
+is-card: true
+tags: pers_affairs
+on-arrival: week_actions += 1; court_timer = 4;
+view-if: week > 3
+max-visits: 2
+max-choices: 4
+
+В стране все подают в суд против всех, а чем мы хуже.
+
+@court_against_kolhoz
+title: Подать в суд против коммунаров, торгующих некачественными товарами
+tag: courts_deal
+on-arrival: kolhozniki_player -= 4; rabochie_player += 2; inteligentsiya_player += 1; kolhozniki_player -= 2 if pro_shtab = 1; rabochie_player += 2 if pro_shtab = 1;
+max-visits: 1
+
+Вы без труда нашли некачественный товар на коммунарском рынке и подали в суд. [? if pro_shtab = 1 : Специалисты из штаба помогли вам составить качественный иск. ?] Коммунар был разоблачен и суд обязал его установит
+
+
+@court_against_enemy
+title: Подать в суд лично против вашего соперника
+tag: courts_deal
+on-arrival: spoiler -= 2; rabochie_player += 2 if enemy_spam = 1; kolhozniki_player += 1 if enemy_spam = 1
+max-visits: 1
+
+[? if pro_shtab = 1 : Специалисты из штаба помогли вам составить качественный иск. ?]
+[? if enemy_spam = 1 : Суд также учел ту историю с телефонными звонками ?]
+
+@court_against_inteli
+title: 
+tag: courts_deal
+max-visits: 1
+
+[? if pro_shtab = 1 : Специалисты из штаба помогли вам составить качественный иск. ?]
+
+@court_against_nomenklatura
+title: 
+tag: courts_deal
+max-visits: 1
+
+[? if pro_shtab = 1 : Специалисты из штаба помогли вам составить качественный иск. ?]

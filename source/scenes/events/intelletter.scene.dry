@@ -2,7 +2,7 @@ title: Письмо 200-х
 new-page: true 
 subtitle: Письмо лучших умов
 tags: event
-view-if: inteligentsiya_player_normalized < inteligentsiya_enemy
+view-if: inteligentsiya_player_normalized < inteligentsiya_enemy_normalized
 on-arrival: inteligentsiya_player -= 5; kolhozniki_player -= 0.5; undecided *= 0.9; inteligentsiya_enemy += 5; rabochie_player -= 0.5; rabochie_enemy += 0.5; inteligentsiya_againstall *= 0.8; nomenklatura_player += 0.5
 max-visits: 1
 frequency: 200

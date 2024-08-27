@@ -88,7 +88,7 @@ Q.program_selected = 0;
 Q.economic_program_seen = 0;
 Q.program_published = 0;
 
-Q.timers = ['speech', 'program', 'interview', 'meeting', 'factory', 'listovki'];
+Q.timers = ['speech', 'program', 'interview', 'meeting', 'factory', 'listovki', 'court'];
 
 // personal affairs timers
 Q.speech_timer = 0;
