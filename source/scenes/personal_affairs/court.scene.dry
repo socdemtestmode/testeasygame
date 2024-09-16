@@ -29,7 +29,7 @@ max-visits: 1
 
 @court_against_inteli
 title: Подать в суд 
-tag: courts_deal
+tags: courts_deal
 max-visits: 1
 
 [? if pro_shtab = 1 : Специалисты из штаба помогли вам составить качественный иск. ?]
