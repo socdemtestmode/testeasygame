@@ -85,7 +85,7 @@ tags: listovki_theme
 view-if: resources > 9
 on-arrival: inteligentsiya_player -= 1; kolhozniki_player += 5; nomenklatura_player -= 3; kolhozniki_againstall += 0.1
 
-= ПОКУПАЙТЕ ТОВАРЫ ТОЛЬКО НА КОММУНАРСКИХ РЫНКАХ, ГОЛОСУЙТЕ ТОЛЬКО ПРОТИВ [+ enemyname : enemyname +]
+= ПОКУПАЙТЕ ТОВАРЫ ТОЛЬКО НА КОММУНАРСКИХ РЫНКАХ, ГОЛОСУЙТЕ ТОЛЬКО ПРОТИВ КАНДИДАТА ПОД ИМЕНЕМ [+ enemyname : enemyname +]
 
 @listovki_kucha
 title: Издать листовку с изображением кучи экскрементов
