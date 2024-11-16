@@ -62,7 +62,7 @@ title: Отменим налоги
 unavailable-subtitle: Экономисты из штаба подсказывают, что налогов уже никаких не осталось
 tags: economic_program
 choose-if: pro_shtab < 1
-on-arrival: economic_program_seen = 1; week_actions -= 1
+on-arrival: economic_program_seen = 1; week_actions -= 1;
 
 Никаких налогов давным-давно уже нет, что Вы собираетесь отменить? Этот пункт в программу не войдет. На этой неделе нам надо будет сделать что-нибудь другое.
 
