@@ -4,7 +4,7 @@ subtitle: Опросы общественного мнения выявили н
 tags: event
 view-if: week > 3 and (player_votes > enemy_votes)
 frequency: 4500
-on-arrival: rabochie_enemy *= 1.1; rabochie_enemy +=1; kolhozniki_enemy *= 1.05; kolhozniki_enemy +=1; nomenklatura_enemy *= 1.05; inteligentsiya_enemy *= 1.1; undecided *= 0.8;
+on-arrival: rabochie_enemy *= 1.11; rabochie_enemy +=1; kolhozniki_enemy *= 1.06; kolhozniki_enemy +=1; nomenklatura_enemy *= 1.06; inteligentsiya_enemy *= 1.11; undecided *= 0.8;
 max-visits: 1
 on-departure: {!
 Q.undecided_votes = Math.round((Q.undecided / Q.total_population) * 100 * 100) / 100;
@@ -14,4 +14,4 @@ set-jump: election_algorithm
 
 = [+ name : yourname +] ПО ДАННЫМ ОПРОСОВ НА ПЕРВОМ МЕСТЕ
 
-Вы лидируете! [+ enemyname : enemyname +] сильно не обрадован. Если до этого он работал в пол силы, то теперь от страха проиграть выложился по-полной. К сожалению, надолго его не хватило, и, как только первый шок прошел, [+ enemyname : enemyname +] быстро вернулся к прежнему ведению избирательной кампании.
+Вы лидируете! [+ enemyname : enemyname +] сильно не обрадован. Если до этого он работал в треть силы, то теперь от страха проиграть выложился на полную. К сожалению, надолго его не хватило, и, как только первый шок прошел, [+ enemyname : enemyname +] быстро вернулся к прежнему вялому ведению избирательной кампании.

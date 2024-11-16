@@ -176,6 +176,7 @@ title: Ввести свое имя (необязательно)
 @start_game
 on-arrival: resources = 200
 go-to: main
+new-page: true
 
 = Типо стартанули
 
