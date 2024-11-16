@@ -62,7 +62,7 @@ on-arrival: spoiler -= 5; crime += 1; rabochie_player += 1; nomenklatura_player 
 Хотя сам Ваш соперник сделал вид что не оскорбился, нашлись доброжелатели, которые подали в суд от его имени. Привлеченный частный эксперт без сомнений указал, что Вы перешли все границы неагрессии. Вы будете подвергнуты наказанию. Одно хорошо - в Вашей ненаигранной неприязни к противнику теперь никто не сомневается. 
 
 @spoiler_yes
-title: Да, [+ enemyname : enemyname +] попросил выдвинуться.
+title: Да, [+ enemyname : enemyname +] попросил меня выдвинуться.
 on-arrival: spoiler += 2; rabochie_player -= 2; inteligentsiya_player -= 6; kolhozniki_player -= 1; rabochie_againstall += 3; inteligentsiya_againstall += 5; kolhozniki_againstall += 2; nomenklatura_againstall += 1;
 
 = ТОЧНО ПОДСАДНОЙ
