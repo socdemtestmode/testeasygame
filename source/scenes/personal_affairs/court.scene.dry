@@ -33,7 +33,6 @@ max-visits: 1
 @court_against_inteli
 title: Подать в суд на врагов рынка из числа прослоечников
 tags: courts_deal
-on-arrival: inteligentsiya_player -= 20; nomenklatura_player += 10; nomenklatura_player += 2 if pro_shtab = 1; inteligentsiya_player -= 10 if pro_shtab += 1; inteligentsiya_againstall += 10; 
 max-visits: 1
 
 [? if pro_shtab = 1 : Специалисты из штаба помогли вам составить качественный иск. ?] 
