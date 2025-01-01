@@ -32,7 +32,7 @@ frequency: 1000
 
 @bazar
 title: На колхозном рынке
-on-arrival: speech_timer = 2; rabochie_player += 3; kolhozniki_player += 10; inteligentsiya_player += 1
+on-arrival: speech_timer = 2; rabochie_player += 3; kolhozniki_player += 10; inteligentsiya_player += 1; speech_was = 1
 frequency: 110
 
 Колхозный рынок - самое оживленное место во всей округе. Здесь пытаются обменять талоны на другие талоны и продают по хозяйственному расчету все что угодно большинство населения. Народ увидел в Вас такого же простого человека и, даже не вслушиваясь в содержание речи, увидел в Вас своего человека. 
@@ -60,7 +60,7 @@ on-arrival: speech_timer = 2; rabochie_player += 2.5; speech_was = 1
 title: Пусть штаб решит где мне выступить
 frequency: 35
 view-if: halfpro_shtab = 1 or pro_shtab = 1
-go-to: square if halfpro_shtab = 1; bazar if pro_shtab = 1; speech_was = 1
+go-to: square if halfpro_shtab = 1; bazar if pro_shtab = 1; 
 
 
 @pomoika
