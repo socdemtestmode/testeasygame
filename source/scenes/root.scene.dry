@@ -48,7 +48,7 @@ Q.rabochie = 25; // industry and trade
 Q.inteligentsiya = 15; // 
 Q.kolhozniki = 20; // 
 Q.nomenklatura = 10;
-Q.undecided = 40;
+Q.undecided = 160;
 Q.total_population = Q.rabochie + Q.inteligentsiya + Q.kolhozniki + Q.nomenklatura + Q.undecided;
 Q.undecided_votes = (Q.undecided / Q.total_population) * 100;
 
@@ -82,6 +82,7 @@ Q.undecided_againstall = 100;
 Q.event_seen = 0;
 Q.listovki_seen = 0;
 Q.total_win = 0;
+Q.speech_was = 0;
 
 // Program events seen and selected
 Q.program_selected = 0;

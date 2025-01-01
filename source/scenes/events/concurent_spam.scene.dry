@@ -2,7 +2,7 @@ title: TV
 new-page: true 
 subtitle: Соперник терроризирует население звонками
 tags: event
-view-if: week > 2
+view-if: week > 2 and and unirandom < 1220
 on-arrival: rabochie_enemy -= 4; kolhozniki_enemy -= 3; nomenklatura_enemy -= 4; inteligentsiya_enemy -= 5; enemy_spam = 1
 max-visits: 1
 frequency: 25

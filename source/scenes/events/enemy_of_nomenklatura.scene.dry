@@ -4,7 +4,7 @@ subtitle: Главный враг списочников.
 tags: event
 view-if: week > 10 and nomenklatura_player < 0.1
 frequency: 250
-on-arrival: rabochie_player += 2; spoiler -= 4; kolhozniki_player -= 0.5; nomenklatura_player -= 15; inteligentsiya_player += 10; crime = 1 if unirandom > 1000; undecided *= 0.9;
+on-arrival: rabochie_player += 2; spoiler -= 3; kolhozniki_player -= 0.5; nomenklatura_player -= 15; inteligentsiya_player += 10; crime = 1 if unirandom > 1000; undecided *= 0.9;
 max-visits: 1
 
 = ВРАГ РЫНОЧНОЙ ВЛАСТИ

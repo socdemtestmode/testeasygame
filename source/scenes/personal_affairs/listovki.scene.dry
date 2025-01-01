@@ -37,7 +37,7 @@ subtitle: - 10 y. e.
 tags: listovki_theme
 view-if: resources > 9 and program_published = 1
 frequency: 150
-on-arrival: resources -= 10; spoiler -= 3; rabochie_player += 3; inteligentsiya_player += 3; nomenklatura_player += 3; kolhozniki_player += 2
+on-arrival: resources -= 10; spoiler -= 2; rabochie_player += 3; inteligentsiya_player += 3; nomenklatura_player += 3; kolhozniki_player += 2
 
 = ПРОГРАММА
 

@@ -5,6 +5,7 @@ tags: event
 view-if: week > 8 and unirandom < 500
 frequency: 150
 on-arrival: rabochie_enemy -= 4; nomenklatura_enemy += 10; inteligentsiya_enemy += 1
+max-visits: 1
 
 = КИСЛОЕ МОЛОКО
 
@@ -23,7 +24,7 @@ title: Ко мне не обращались - не буду лезть.
 
 @proizvol_yes
 title: [+ enemyname : enemyname +] прав. Договорники сами виноваты.
-on-arrival: spoiler += 2; rabochie_player -= 2; rabochie_againstall += 4; rabochie_againstall *= 1.1; nomenklatura_player += 1; nomenklatura_againstall *= 0.55
+on-arrival: spoiler += 2; rabochie_player -= 2; rabochie_againstall += 4; rabochie_againstall *= 1.1; nomenklatura_player += 1; nomenklatura_againstall *= 0.55; rabochie_player -= 4 if rabochie_player_normalized > rabochie_enemy_normalized
 
 = PACTA SUNT SERVANDA
 
@@ -31,7 +32,7 @@ on-arrival: spoiler += 2; rabochie_player -= 2; rabochie_againstall += 4; raboch
 
 @proizvol_no
 title: Виноваты те, кто обманом навязывают такие нечестные договоры.
-on-arrival: spoiler -= 1; rabochie_player += 3; rabochie_againstall *= 0.7; nomenklatura_player -= 8
+on-arrival: spoiler -= 0.5; rabochie_player += 3; rabochie_againstall *= 0.7; nomenklatura_player -= 8
 
 = ПУСТЬ САМИ ПЬЮТ КИСЛОЕ МОЛОКО
 
