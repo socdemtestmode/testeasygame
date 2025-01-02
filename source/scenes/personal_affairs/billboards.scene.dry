@@ -9,13 +9,13 @@ max-choices: 4
 
 Большие рекламные конструкции - основа продвижения рекламы в округе. Большинство местных разучились читать тексты длиннее торговых марок и научились автоматически игнорировать любую звуковую рекламу. Большой и яркий плакат на рекламном щите остался последним способом обратить на себя внимание жителей. Остается надеятся, что наш плакат затеряется среди тысяч похожих, и для этого надо постараться сделать его максимально не выделяющимся.  
 
-- #bilbloadrs_theme
+- #billboadrs_theme
 - @easy_discard
 
 @bilb2
 title: Напечатать листовки на продажу
 subtitle: Это даст нам немного денег
-tags: listovki_theme
+tags: billboadrs_theme
 on-arrival: resources += 5; kolhozniki_player += 1; rabochie_player += 1; kolhozniki_player += 4 if player_votes > enemy_votes; kolhozniki_player -= 3 if player_votes < enemy_votes; rabochie_player -= 1 if player_votes < enemy_votes; resources -= 2 if player_votes < enemy_votes; inteligentsiya_player -= 1 if player_votes < enemy_votes;
 
 = ПОКУПАЙ ИЛИ ПРОИГРАЕШЬ
@@ -28,5 +28,5 @@ on-arrival: resources += 5; kolhozniki_player += 1; rabochie_player += 1; kolhoz
 title: Раздавать листовки у проходной завода
 subtitle: - 10 y. e.
 view-if: resources > 9
-tags: listovki_theme
+tags: billboadrs_theme
 go-to: factory.listovki_factory
