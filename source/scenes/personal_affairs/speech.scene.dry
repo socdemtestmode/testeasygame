@@ -54,14 +54,13 @@ on-arrival: speech_timer = 2; nomenklatura_player += 5; rabochie_player += 0.5; 
 title: На заводе
 on-arrival: speech_timer = 2; rabochie_player += 2.5; speech_was = 1
 
-На маленьком предприятии вы не нашли особо большой аудитории, но она, сплошь из договорников - всем сердцем теперь на Вашей стороне, как не старались вы читать текст речи максимально скучно.
+На маленьком предприятии вы не нашли особо большой аудитории, но она, сплошь из договорников - всем сердцем теперь на Вашей стороне, как не старались Вы читать текст речи максимально скучно.
 
 @stabresit
 title: Пусть штаб решит где мне выступить
 frequency: 35
 view-if: halfpro_shtab = 1 or pro_shtab = 1
-go-to: square if halfpro_shtab = 1; bazar if pro_shtab = 1; 
-
+go-to: square if halfpro_shtab = 1; bazar if pro_shtab = 1
 
 @pomoika
 title: На помойке
